@@ -1,0 +1,178 @@
+{
+  "project": {
+    "name": "Budget Manager 2025",
+    "version": "1.0.0",
+    "testEnvironment": "development"
+  },
+  "architecture": {
+    "testDirectory": "./tests",
+    "reportDirectory": "./tests/reports",
+    "utilsDirectory": "./tests/test-utils"
+  },
+  "categories": {
+    "unit": {
+      "directory": "./tests/unit",
+      "timeout": 5000,
+      "parallel": true,
+      "coverage": {
+        "threshold": 90,
+        "required": true
+      },
+      "frameworks": ["jest", "vitest"],
+      "description": "Isolierte Komponenten-Tests"
+    },
+    "integration": {
+      "directory": "./tests/integration",
+      "timeout": 30000,
+      "parallel": false,
+      "coverage": {
+        "threshold": 80,
+        "required": true
+      },
+      "frameworks": ["jest"],
+      "description": "Komponenten-Interaktions-Tests"
+    },
+    "e2e": {
+      "directory": "./tests/e2e",
+      "timeout": 60000,
+      "parallel": false,
+      "coverage": {
+        "threshold": 70,
+        "required": false
+      },
+      "frameworks": ["playwright"],
+      "description": "End-to-End User-Journey Tests"
+    },
+    "stories": {
+      "directory": "./tests/stories",
+      "timeout": 45000,
+      "parallel": false,
+      "coverage": {
+        "threshold": 100,
+        "required": true,
+        "type": "acceptance-criteria"
+      },
+      "frameworks": ["custom"],
+      "description": "Story-basierte Acceptance Tests"
+    },
+    "system": {
+      "directory": "./tests/system",
+      "timeout": 15000,
+      "parallel": false,
+      "coverage": {
+        "threshold": 100,
+        "required": true,
+        "type": "infrastructure"
+      },
+      "frameworks": ["custom"],
+      "description": "System- und Infrastruktur-Tests"
+    }
+  },
+  "naming": {
+    "filePattern": "{component-name}.{test-type}.test.{ext}",
+    "testIdPattern": "{EPIC}.{STORY}-{TYPE}-{SEQ}",
+    "describePattern": "{ComponentName}.{testType}",
+    "examples": {
+      "unit": "budget-controller.unit.test.js",
+      "integration": "project-api.integration.test.js",
+      "e2e": "budget-management.e2e.test.js",
+      "story": "story-1-1-annual-budget.story.test.js",
+      "system": "connectivity.system.test.js"
+    }
+  },
+  "environment": {
+    "ports": {
+      "frontend": 3000,
+      "backend": 3001,
+      "testServer": 3099
+    },
+    "databases": {
+      "test": "budget_manager_test",
+      "integration": "budget_manager_integration"
+    },
+    "apis": {
+      "supabase": {
+        "url": "https://ppaletujnevtftvpoorx.supabase.co",
+        "testMode": true
+      }
+    }
+  },
+  "reporting": {
+    "formats": ["json", "html", "console"],
+    "coverage": {
+      "outputDir": "./tests/reports/coverage",
+      "formats": ["html", "lcov", "json"]
+    },
+    "results": {
+      "outputDir": "./tests/reports/results",
+      "formats": ["junit", "json"]
+    },
+    "metrics": {
+      "outputDir": "./tests/reports/metrics",
+      "trackPerformance": true,
+      "trackTrends": true
+    }
+  },
+  "quality": {
+    "gates": {
+      "unit": {
+        "coverage": 90,
+        "passRate": 100,
+        "maxDuration": "5m"
+      },
+      "integration": {
+        "coverage": 80,
+        "passRate": 100,
+        "maxDuration": "10m"
+      },
+      "e2e": {
+        "coverage": 70,
+        "passRate": 95,
+        "maxDuration": "30m"
+      },
+      "stories": {
+        "acceptanceCriteria": 100,
+        "passRate": 100,
+        "maxDuration": "15m"
+      },
+      "system": {
+        "criticalPaths": 100,
+        "passRate": 100,
+        "maxDuration": "5m"
+      }
+    }
+  },
+  "german": {
+    "currency": {
+      "format": "de-DE",
+      "symbol": "EUR",
+      "testValues": ["1.234,56 €", "0,00 €", "999.999,99 €"]
+    },
+    "dates": {
+      "format": "dd.MM.yyyy",
+      "testValues": ["01.01.2025", "31.12.2025", "29.02.2024"]
+    },
+    "businessRules": {
+      "fiscalYear": "calendar",
+      "workingDays": ["monday", "tuesday", "wednesday", "thursday", "friday"],
+      "holidays": ["newYear", "easter", "christmas"]
+    }
+  },
+  "ci": {
+    "enabled": true,
+    "parallel": true,
+    "failFast": false,
+    "retries": 2,
+    "notifications": {
+      "slack": false,
+      "email": false
+    }
+  },
+  "development": {
+    "watch": true,
+    "hotReload": true,
+    "debugMode": false,
+    "verbose": true
+  }
+}
+

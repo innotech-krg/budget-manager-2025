@@ -1,0 +1,13 @@
+{
+  "timestamp": "2025-09-01T15:11:37.944Z",
+  "ports": {
+    "frontend": 3000,
+    "backend": 3001
+  },
+  "urls": {
+    "frontend": "http://localhost:3000",
+    "backend": "http://localhost:3001",
+    "api": "http://localhost:3001/api",
+    "health": "http://localhost:3001/health"
+  }
+}

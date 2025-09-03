@@ -1,0 +1,239 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e8]:
+        - generic [ref=e10]: €
+        - generic [ref=e11]:
+          - heading "Budget Manager 2025" [level=1] [ref=e12]
+          - paragraph [ref=e13]: Deutsche Geschäfts-Budget-Verwaltung
+      - navigation "Hauptnavigation" [ref=e14]:
+        - button "📊 Dashboard Live" [ref=e15] [cursor=pointer]:
+          - generic [ref=e16] [cursor=pointer]:
+            - generic [ref=e17] [cursor=pointer]: 📊
+            - generic [ref=e18] [cursor=pointer]: Dashboard
+            - generic [ref=e19] [cursor=pointer]: Live
+        - button "💰 Budget-Verwaltung" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21] [cursor=pointer]:
+            - generic [ref=e22] [cursor=pointer]: 💰
+            - generic [ref=e23] [cursor=pointer]: Budget-Verwaltung
+        - button "🎯 3D Budget-Tracking" [ref=e24] [cursor=pointer]:
+          - generic [ref=e25] [cursor=pointer]:
+            - generic [ref=e26] [cursor=pointer]: 🎯
+            - generic [ref=e27] [cursor=pointer]: 3D Budget-Tracking
+        - button "🔄 Budget-Transfers" [ref=e28] [cursor=pointer]:
+          - generic [ref=e29] [cursor=pointer]:
+            - generic [ref=e30] [cursor=pointer]: 🔄
+            - generic [ref=e31] [cursor=pointer]: Budget-Transfers
+  - main [ref=e32]:
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - generic [ref=e37]:
+          - generic [ref=e39]: 📊
+          - generic [ref=e40]:
+            - heading "Echtzeit-Dashboard" [level=1] [ref=e41]
+            - paragraph [ref=e42]: Live-Übersicht aller Budget-Aktivitäten und Kennzahlen
+        - generic [ref=e44]:
+          - generic [ref=e46]: 💡
+          - generic [ref=e47]:
+            - heading "Dashboard-Features" [level=3] [ref=e48]
+            - paragraph [ref=e49]: Automatische Updates alle 30 Sekunden • WebSocket Live-Verbindung • Deutsche Geschäfts-Standards • Performance-optimiert
+      - generic [ref=e50]:
+        - generic [ref=e51]:
+          - generic [ref=e52]:
+            - generic [ref=e53]:
+              - generic [ref=e56]: 🟢 Live-Verbindung aktiv
+              - generic [ref=e57]: "⚡ Ladezeit: 810ms"
+            - generic [ref=e58]:
+              - generic [ref=e61]: Auto-Update alle 30s
+              - button "Aktualisieren" [ref=e62] [cursor=pointer]:
+                - img [ref=e63] [cursor=pointer]
+                - generic [ref=e65] [cursor=pointer]: Aktualisieren
+          - paragraph [ref=e67]: "Zuletzt aktualisiert: 29.08.2025, 13:51:18"
+        - generic [ref=e68]:
+          - generic [ref=e70]:
+            - generic [ref=e71]:
+              - generic [ref=e72]:
+                - generic [ref=e73]: 💰
+                - generic [ref=e74]:
+                  - heading "Budget-Übersicht" [level=3] [ref=e75]
+                  - paragraph [ref=e76]: 3 Budgets • 4 aktive Projekte
+              - generic [ref=e77]:
+                - generic [ref=e78]: 🟡
+                - text: Warnung
+            - generic [ref=e79]:
+              - generic [ref=e80]:
+                - paragraph [ref=e81]: Gesamt-Budget
+                - paragraph [ref=e82]: 500.000,00 €
+              - generic [ref=e83]:
+                - paragraph [ref=e84]: Verfügbar
+                - paragraph [ref=e85]: 120.000,00 €
+              - generic [ref=e86]:
+                - paragraph [ref=e87]: Allokiert
+                - paragraph [ref=e88]: 380.000,00 €
+                - generic [ref=e92]: 76.0%
+              - generic [ref=e93]:
+                - paragraph [ref=e94]: Verbraucht
+                - paragraph [ref=e95]: 285.000,00 €
+                - generic [ref=e99]: 75.0%
+            - generic [ref=e101]:
+              - paragraph [ref=e102]: Gesamt-Auslastung
+              - generic [ref=e103]: 57%
+            - generic [ref=e107]:
+              - generic [ref=e108]: "Verbleibendes Budget:"
+              - generic [ref=e109]: 95.000,00 €
+            - generic [ref=e110]: "Zuletzt aktualisiert: 29.8.2025, 13:51:18"
+          - generic [ref=e112]:
+            - generic [ref=e113]:
+              - generic [ref=e114]:
+                - generic [ref=e115]: 📈
+                - generic [ref=e116]:
+                  - heading "Burn-Rate-Analyse" [level=3] [ref=e117]
+                  - paragraph [ref=e118]: Monatlicher Budget-Verbrauch mit Trend-Prognose
+              - generic [ref=e119]:
+                - generic [ref=e120]: 📈
+                - text: Steigend (8.5%)
+            - generic [ref=e121]:
+              - generic [ref=e122]:
+                - paragraph [ref=e123]: Durchschnittlicher monatlicher Verbrauch
+                - paragraph [ref=e124]: 46.000,00 €
+              - generic [ref=e125]:
+                - paragraph [ref=e126]: Aktueller Monats-Verbrauch
+                - paragraph [ref=e127]: 50.000,00 €
+            - img [ref=e129]
+            - paragraph [ref=e131]: Historische Daten (durchgezogene Linie) • Prognose (gestrichelte Linie)
+          - generic [ref=e133]:
+            - generic [ref=e134]:
+              - generic [ref=e135]:
+                - generic [ref=e136]: 🚨
+                - generic [ref=e137]:
+                  - heading "Kritische Warnungen" [level=3] [ref=e138]
+                  - paragraph [ref=e139]: 3 Warnungen • 1 kritisch
+              - generic [ref=e140]:
+                - generic [ref=e141]: 🚨
+                - text: 1 Kritisch
+            - generic [ref=e142]:
+              - generic [ref=e143]:
+                - paragraph [ref=e144]: "1"
+                - paragraph [ref=e145]: Kritisch
+              - generic [ref=e146]:
+                - paragraph [ref=e147]: "1"
+                - paragraph [ref=e148]: Hoch
+              - generic [ref=e149]:
+                - paragraph [ref=e150]: "1"
+                - paragraph [ref=e151]: Mittel
+              - generic [ref=e152]:
+                - paragraph [ref=e153]: "0"
+                - paragraph [ref=e154]: Niedrig
+            - generic [ref=e155]:
+              - generic [ref=e157] [cursor=pointer]:
+                - generic [ref=e158] [cursor=pointer]:
+                  - generic [ref=e159] [cursor=pointer]:
+                    - generic [ref=e160] [cursor=pointer]: 🚨
+                    - generic [ref=e161] [cursor=pointer]: 💸
+                  - generic [ref=e162] [cursor=pointer]:
+                    - heading "Budget überschritten" [level=4] [ref=e163] [cursor=pointer]
+                    - paragraph [ref=e164] [cursor=pointer]: Projekt "Server Migration" hat das Budget um 8.600,00 € überschritten
+                    - generic [ref=e165] [cursor=pointer]:
+                      - generic [ref=e166] [cursor=pointer]: 📁
+                      - generic [ref=e167] [cursor=pointer]: "Projekt: Server Migration"
+                    - generic [ref=e169] [cursor=pointer]: "Überschreitung: 8.600,00 €"
+                - generic [ref=e170] [cursor=pointer]: vor 30 Min
+              - generic [ref=e172] [cursor=pointer]:
+                - generic [ref=e173] [cursor=pointer]:
+                  - generic [ref=e174] [cursor=pointer]:
+                    - generic [ref=e175] [cursor=pointer]: ⚠️
+                    - generic [ref=e176] [cursor=pointer]: ⚡
+                  - generic [ref=e177] [cursor=pointer]:
+                    - heading "Budget kritisch" [level=4] [ref=e178] [cursor=pointer]
+                    - paragraph [ref=e179] [cursor=pointer]: Projekt "Büroausstattung Upgrade" hat nur noch 420,00 € Budget übrig
+                    - generic [ref=e180] [cursor=pointer]:
+                      - generic [ref=e181] [cursor=pointer]: 📁
+                      - generic [ref=e182] [cursor=pointer]: "Projekt: Büroausstattung Upgrade"
+                    - generic [ref=e184] [cursor=pointer]: "Verbleibend: 420,00 €"
+                - generic [ref=e185] [cursor=pointer]: vor 2 Std
+              - generic [ref=e187] [cursor=pointer]:
+                - generic [ref=e188] [cursor=pointer]:
+                  - generic [ref=e189] [cursor=pointer]:
+                    - generic [ref=e190] [cursor=pointer]: 🟡
+                    - generic [ref=e191] [cursor=pointer]: 🔄
+                  - generic [ref=e192] [cursor=pointer]:
+                    - heading "Ausstehende Transfers" [level=4] [ref=e193] [cursor=pointer]
+                    - paragraph [ref=e194] [cursor=pointer]: 2 Budget-Transfers warten auf Genehmigung
+                    - generic [ref=e196] [cursor=pointer]: "Anzahl: 2"
+                - generic [ref=e197] [cursor=pointer]: vor 4 Std
+            - generic [ref=e199]:
+              - generic [ref=e200]: 🔄
+              - generic [ref=e201]: Automatische Aktualisierung alle 30 Sekunden
+          - generic [ref=e203]:
+            - generic [ref=e205]:
+              - generic [ref=e206]: 🎯
+              - generic [ref=e207]:
+                - heading "Projekt-Portfolio" [level=3] [ref=e208]
+                - paragraph [ref=e209]: 4 Projekte • Budget-Status-Übersicht
+            - generic [ref=e210]:
+              - generic [ref=e211]:
+                - paragraph [ref=e212]: "1"
+                - paragraph [ref=e213]: 🟢 Gesund
+              - generic [ref=e214]:
+                - paragraph [ref=e215]: "1"
+                - paragraph [ref=e216]: 🟡 Warnung
+              - generic [ref=e217]:
+                - paragraph [ref=e218]: "1"
+                - paragraph [ref=e219]: 🟠 Kritisch
+              - generic [ref=e220]:
+                - paragraph [ref=e221]: "1"
+                - paragraph [ref=e222]: 🔴 Überschritten
+            - generic [ref=e223]:
+              - heading "🚨 Risiko-Projekte" [level=4] [ref=e224]
+              - generic [ref=e225]:
+                - generic [ref=e226]:
+                  - generic [ref=e227]:
+                    - paragraph [ref=e228]: Server Migration
+                    - paragraph [ref=e229]: 68.600,00 € von 60.000,00 €
+                  - generic [ref=e230]:
+                    - paragraph [ref=e231]: 114.3%
+                    - paragraph [ref=e232]: Überschritten
+                - generic [ref=e233]:
+                  - generic [ref=e234]:
+                    - paragraph [ref=e235]: Büroausstattung Upgrade
+                    - paragraph [ref=e236]: 9.580,00 € von 10.000,00 €
+                  - generic [ref=e237]:
+                    - paragraph [ref=e238]: 95.8%
+                    - paragraph [ref=e239]: Kritisch
+        - generic [ref=e240]:
+          - generic [ref=e241]:
+            - generic [ref=e242]:
+              - generic [ref=e244]: ⚡
+              - heading "Performance" [level=3] [ref=e245]
+              - paragraph [ref=e246]:
+                - text: "Ladezeit: 810ms"
+                - text: "Status: Optimal"
+            - generic [ref=e247]:
+              - generic [ref=e249]: 🔄
+              - heading "Live-Updates" [level=3] [ref=e250]
+              - paragraph [ref=e251]:
+                - text: "WebSocket: Aktiv"
+                - text: "Auto-Refresh: Alle 30 Sekunden"
+            - generic [ref=e252]:
+              - generic [ref=e254]: 🇩🇪
+              - heading "Compliance" [level=3] [ref=e255]
+              - paragraph [ref=e256]:
+                - text: Deutsche Standards
+                - text: EUR-Formatierung
+          - paragraph [ref=e258]: 🚀 Budget Manager 2025 • Entwickelt mit deutscher Präzision • Powered by React + TypeScript + Tailwind CSS
+  - contentinfo [ref=e259]:
+    - generic [ref=e260]:
+      - generic [ref=e261]:
+        - paragraph [ref=e263]:
+          - generic [ref=e264]: © 2025 Budget Manager
+          - generic [ref=e266]: 🇩🇪 Entwickelt mit deutscher Präzision
+        - generic [ref=e267]:
+          - generic [ref=e270]: System aktiv
+          - generic [ref=e271]:
+            - generic [ref=e272]: Powered by
+            - generic [ref=e273]: React + TypeScript + Tailwind CSS
+      - paragraph [ref=e275]: "💡 Tipp: Verwende Alt+1-4 für schnelle Navigation zwischen den Seiten"
+```

@@ -1,0 +1,259 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e8]:
+        - generic [ref=e10]: €
+        - generic [ref=e11]:
+          - heading "Budget Manager 2025" [level=1] [ref=e12]
+          - paragraph [ref=e13]: Deutsche Geschäfts-Budget-Verwaltung
+      - navigation "Hauptnavigation" [ref=e14]:
+        - button "📊 Dashboard Live" [ref=e15] [cursor=pointer]:
+          - generic [ref=e16] [cursor=pointer]:
+            - generic [ref=e17] [cursor=pointer]: 📊
+            - generic [ref=e18] [cursor=pointer]: Dashboard
+            - generic [ref=e19] [cursor=pointer]: Live
+        - button "💰 Budget-Verwaltung" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21] [cursor=pointer]:
+            - generic [ref=e22] [cursor=pointer]: 💰
+            - generic [ref=e23] [cursor=pointer]: Budget-Verwaltung
+        - button "🎯 3D Budget-Tracking" [ref=e24] [cursor=pointer]:
+          - generic [ref=e25] [cursor=pointer]:
+            - generic [ref=e26] [cursor=pointer]: 🎯
+            - generic [ref=e27] [cursor=pointer]: 3D Budget-Tracking
+        - button "🔄 Budget-Transfers" [ref=e28] [cursor=pointer]:
+          - generic [ref=e29] [cursor=pointer]:
+            - generic [ref=e30] [cursor=pointer]: 🔄
+            - generic [ref=e31] [cursor=pointer]: Budget-Transfers
+  - main [ref=e32]:
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - generic [ref=e37]:
+          - heading "🔄 Budget-Transfer-System" [level=1] [ref=e38]
+          - paragraph [ref=e39]: Verwalten Sie Budget-Transfers zwischen Projekten mit Genehmigungs-Workflow
+        - button "➕ Neuer Transfer-Antrag" [active] [ref=e40] [cursor=pointer]
+      - generic [ref=e41]:
+        - generic [ref=e43]:
+          - generic [ref=e44]:
+            - paragraph [ref=e45]: Gesamt
+            - paragraph [ref=e46]: "4"
+          - generic [ref=e47]: 📊
+        - generic [ref=e49]:
+          - generic [ref=e50]:
+            - paragraph [ref=e51]: Ausstehend
+            - paragraph [ref=e52]: "1"
+            - paragraph [ref=e53]: 15.000,00 €
+          - 'generic "Transfer-Status: Ausstehend" [ref=e54]':
+            - generic [ref=e55]: 🟡
+            - generic [ref=e56]: Ausstehend
+        - generic [ref=e58]:
+          - generic [ref=e59]:
+            - paragraph [ref=e60]: Genehmigt
+            - paragraph [ref=e61]: "1"
+            - paragraph [ref=e62]: 8.500,00 €
+          - 'generic "Transfer-Status: Genehmigt" [ref=e63]':
+            - generic [ref=e64]: 🟢
+            - generic [ref=e65]: Genehmigt
+        - generic [ref=e67]:
+          - generic [ref=e68]:
+            - paragraph [ref=e69]: Abgelehnt/Storniert
+            - paragraph [ref=e70]: "2"
+          - generic [ref=e71]: 🚫
+      - generic [ref=e72]:
+        - generic [ref=e73]: "Filter nach Status:"
+        - combobox "Filter nach Status:" [ref=e74]:
+          - option "Alle Status (4)" [selected]
+          - option "Ausstehend (1)"
+          - option "Genehmigt (1)"
+          - option "Abgelehnt (1)"
+          - option "Storniert (1)"
+      - generic [ref=e75]:
+        - generic [ref=e76]:
+          - generic [ref=e77]:
+            - generic [ref=e78]:
+              - generic [ref=e79]: ⏳
+              - generic [ref=e80]:
+                - 'heading "Budget-Transfer #transfer" [level=3] [ref=e81]'
+                - paragraph [ref=e82]: Beantragt am 29.08.2025
+            - 'generic "Transfer-Status: Ausstehend" [ref=e83]':
+              - generic [ref=e84]: 🟡
+              - generic [ref=e85]: Ausstehend
+          - generic [ref=e86]:
+            - generic [ref=e88]:
+              - generic [ref=e89]:
+                - paragraph [ref=e90]: Von
+                - paragraph [ref=e91]: Website Redesign 2025
+                - paragraph [ref=e92]: WD-2025-001
+              - generic [ref=e93]:
+                - generic [ref=e94]: →
+                - generic [ref=e95]: 15.000,00 €
+                - generic [ref=e96]: →
+              - generic [ref=e97]:
+                - paragraph [ref=e98]: Zu
+                - paragraph [ref=e99]: Marketing Kampagne Q1
+                - paragraph [ref=e100]: WD-2025-002
+            - generic [ref=e101]:
+              - paragraph [ref=e102]: "📝 Begründung:"
+              - paragraph [ref=e103]: "\"Budget-Umschichtung aufgrund geänderter Prioritäten im Marketing-Bereich\""
+          - generic [ref=e104]:
+            - button "👁️ Details" [ref=e105] [cursor=pointer]
+            - button "🚫 Stornieren" [ref=e106] [cursor=pointer]
+            - button "⚖️ Bearbeiten" [ref=e107] [cursor=pointer]
+        - generic [ref=e108]:
+          - generic [ref=e109]:
+            - generic [ref=e110]:
+              - generic [ref=e111]: ✅
+              - generic [ref=e112]:
+                - 'heading "Budget-Transfer #transfer" [level=3] [ref=e113]'
+                - paragraph [ref=e114]: Beantragt am 28.08.2025
+            - 'generic "Transfer-Status: Genehmigt" [ref=e115]':
+              - generic [ref=e116]: 🟢
+              - generic [ref=e117]: Genehmigt
+          - generic [ref=e118]:
+            - generic [ref=e120]:
+              - generic [ref=e121]:
+                - paragraph [ref=e122]: Von
+                - paragraph [ref=e123]: Server Migration
+                - paragraph [ref=e124]: WD-2025-004
+              - generic [ref=e125]:
+                - generic [ref=e126]: →
+                - generic [ref=e127]: 8.500,00 €
+                - generic [ref=e128]: →
+              - generic [ref=e129]:
+                - paragraph [ref=e130]: Zu
+                - paragraph [ref=e131]: Büroausstattung Upgrade
+                - paragraph [ref=e132]: WD-2025-003
+            - generic [ref=e133]:
+              - paragraph [ref=e134]: "📝 Begründung:"
+              - paragraph [ref=e135]: "\"Server-Migration unter Budget abgeschlossen, überschüssiges Budget für Büroausstattung\""
+            - generic [ref=e136]:
+              - paragraph [ref=e137]:
+                - strong [ref=e138]: "Genehmigt:"
+                - text: 28.08.2025
+              - paragraph [ref=e139]:
+                - strong [ref=e140]: "✅ Ausgeführt:"
+                - text: 28.08.2025
+              - generic [ref=e141]:
+                - paragraph [ref=e142]: "💬 Kommentar:"
+                - paragraph [ref=e143]: "\"Genehmigt nach Rücksprache mit Projektleitung\""
+          - button "👁️ Details" [ref=e145] [cursor=pointer]
+        - generic [ref=e146]:
+          - generic [ref=e147]:
+            - generic [ref=e148]:
+              - generic [ref=e149]: ❌
+              - generic [ref=e150]:
+                - 'heading "Budget-Transfer #transfer" [level=3] [ref=e151]'
+                - paragraph [ref=e152]: Beantragt am 27.08.2025
+            - 'generic "Transfer-Status: Abgelehnt" [ref=e153]':
+              - generic [ref=e154]: 🔴
+              - generic [ref=e155]: Abgelehnt
+          - generic [ref=e156]:
+            - generic [ref=e158]:
+              - generic [ref=e159]:
+                - paragraph [ref=e160]: Von
+                - paragraph [ref=e161]: Marketing Kampagne Q1
+                - paragraph [ref=e162]: WD-2025-002
+              - generic [ref=e163]:
+                - generic [ref=e164]: →
+                - generic [ref=e165]: 5.000,00 €
+                - generic [ref=e166]: →
+              - generic [ref=e167]:
+                - paragraph [ref=e168]: Zu
+                - paragraph [ref=e169]: Website Redesign 2025
+                - paragraph [ref=e170]: WD-2025-001
+            - generic [ref=e171]:
+              - paragraph [ref=e172]: "📝 Begründung:"
+              - paragraph [ref=e173]: "\"Zusätzliches Budget für Website-Features benötigt\""
+            - generic [ref=e174]:
+              - paragraph [ref=e175]:
+                - strong [ref=e176]: "Abgelehnt:"
+                - text: 27.08.2025
+              - generic [ref=e177]:
+                - paragraph [ref=e178]: "💬 Kommentar:"
+                - paragraph [ref=e179]: "\"Marketing-Budget ist bereits vollständig verplant für Q1-Kampagne\""
+          - button "👁️ Details" [ref=e181] [cursor=pointer]
+        - generic [ref=e182]:
+          - generic [ref=e183]:
+            - generic [ref=e184]:
+              - generic [ref=e185]: 🚫
+              - generic [ref=e186]:
+                - 'heading "Budget-Transfer #transfer" [level=3] [ref=e187]'
+                - paragraph [ref=e188]: Beantragt am 26.08.2025
+            - 'generic "Transfer-Status: Storniert" [ref=e189]':
+              - generic [ref=e190]: ⚫
+              - generic [ref=e191]: Storniert
+          - generic [ref=e192]:
+            - generic [ref=e194]:
+              - generic [ref=e195]:
+                - paragraph [ref=e196]: Von
+                - paragraph [ref=e197]: Website Redesign 2025
+                - paragraph [ref=e198]: WD-2025-001
+              - generic [ref=e199]:
+                - generic [ref=e200]: →
+                - generic [ref=e201]: 3.000,00 €
+                - generic [ref=e202]: →
+              - generic [ref=e203]:
+                - paragraph [ref=e204]: Zu
+                - paragraph [ref=e205]: Server Migration
+                - paragraph [ref=e206]: WD-2025-004
+            - generic [ref=e207]:
+              - paragraph [ref=e208]: "📝 Begründung:"
+              - paragraph [ref=e209]: "\"Unerwartete Zusatzkosten im Website-Projekt\""
+            - generic [ref=e211]:
+              - paragraph [ref=e212]: "💬 Kommentar:"
+              - paragraph [ref=e213]: "\"Vom Antragsteller storniert\""
+          - button "👁️ Details" [ref=e215] [cursor=pointer]
+      - generic [ref=e218]:
+        - generic [ref=e219]:
+          - heading "🔄 Neuer Budget-Transfer-Antrag" [level=2] [ref=e220]
+          - button "✕" [ref=e221] [cursor=pointer]
+        - generic [ref=e222]:
+          - generic [ref=e223]:
+            - generic [ref=e224]: 📤 Von Projekt *
+            - combobox "📤 Von Projekt *" [ref=e225]:
+              - option "-- Quell-Projekt auswählen --" [selected]
+              - 'option "Website Redesign 2025 (WD-2025-001) - Verfügbar: 13.000,00 €"'
+              - 'option "Marketing Kampagne Q1 (WD-2025-002) - Verfügbar: 10.000,00 €"'
+              - 'option "Büroausstattung Upgrade (WD-2025-003) - Verfügbar: 420,00 €"'
+              - 'option "Server Migration (WD-2025-004) - Verfügbar: 0,00 €"'
+          - generic [ref=e226]:
+            - generic [ref=e227]: 📥 Zu Projekt *
+            - combobox "📥 Zu Projekt *" [ref=e228]:
+              - option "-- Ziel-Projekt auswählen --" [selected]
+              - option "Website Redesign 2025 (WD-2025-001)"
+              - option "Marketing Kampagne Q1 (WD-2025-002)"
+              - option "Büroausstattung Upgrade (WD-2025-003)"
+              - option "Server Migration (WD-2025-004)"
+          - generic [ref=e229]:
+            - generic [ref=e230]: 💰 Transfer-Betrag *
+            - generic [ref=e231]:
+              - textbox "💰 Transfer-Betrag *" [ref=e232]
+              - generic [ref=e233]: €
+            - paragraph [ref=e234]: "Format: Deutsche Zahlenformatierung (z.B. 1.500,50 für 1500.50 Euro)"
+          - generic [ref=e235]:
+            - generic [ref=e236]: 📝 Begründung *
+            - textbox "📝 Begründung *" [ref=e237]
+            - paragraph [ref=e238]: 0/1000 Zeichen (mindestens 10 erforderlich)
+          - generic [ref=e240]:
+            - generic [ref=e241]: ⚠️
+            - generic [ref=e242]:
+              - heading "Wichtiger Hinweis" [level=4] [ref=e243]
+              - paragraph [ref=e244]: Alle Budget-Transfers erfordern eine manuelle Genehmigung. Sie erhalten eine E-Mail-Benachrichtigung über den Status Ihres Antrags.
+          - generic [ref=e245]:
+            - button "Abbrechen" [ref=e246] [cursor=pointer]
+            - button "📤 Transfer-Antrag stellen" [ref=e247] [cursor=pointer]
+  - contentinfo [ref=e248]:
+    - generic [ref=e249]:
+      - generic [ref=e250]:
+        - paragraph [ref=e252]:
+          - generic [ref=e253]: © 2025 Budget Manager
+          - generic [ref=e255]: 🇩🇪 Entwickelt mit deutscher Präzision
+        - generic [ref=e256]:
+          - generic [ref=e259]: System aktiv
+          - generic [ref=e260]:
+            - generic [ref=e261]: Powered by
+            - generic [ref=e262]: React + TypeScript + Tailwind CSS
+      - paragraph [ref=e264]: "💡 Tipp: Verwende Alt+1-4 für schnelle Navigation zwischen den Seiten"
+```

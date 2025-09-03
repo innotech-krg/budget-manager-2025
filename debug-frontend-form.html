@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frontend Form Debug</title>
+</head>
+<body>
+    <h1>Debug: React Hook Form valueAsNumber</h1>
+    
+    <form id="testForm">
+        <div>
+            <label>Jahr (ohne valueAsNumber):</label>
+            <input type="number" id="jahr1" name="jahr1" value="2030">
+        </div>
+        
+        <div>
+            <label>Jahr (mit valueAsNumber - simuliert):</label>
+            <input type="number" id="jahr2" name="jahr2" value="2030">
+        </div>
+        
+        <button type="button" onclick="testFormData()">Test Form Data</button>
+    </form>
+    
+    <div id="results"></div>
+    
+    <script>
+        function testFormData() {
+            const jahr1 = document.getElementById('jahr1').value;
+            const jahr2 = parseInt(document.getElementById('jahr2').value);
+            
+            const results = document.getElementById('results');
+            results.innerHTML = `
+                <h3>Ergebnisse:</h3>
+                <p>Jahr1 (String): ${jahr1} (Type: ${typeof jahr1})</p>
+                <p>Jahr2 (Number): ${jahr2} (Type: ${typeof jahr2})</p>
+                <p>JSON String: ${JSON.stringify({jahr1, jahr2})}</p>
+                
+                <h3>Das Problem:</h3>
+                <p>Ohne valueAsNumber: React Hook Form sendet Strings</p>
+                <p>Mit valueAsNumber: React Hook Form sendet Numbers</p>
+                <p>Backend erwartet Numbers für Validierung!</p>
+            `;
+        }
+    </script>
+</body>
+</html>
+

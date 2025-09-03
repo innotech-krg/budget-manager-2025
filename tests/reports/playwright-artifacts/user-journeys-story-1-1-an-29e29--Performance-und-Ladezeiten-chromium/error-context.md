@@ -1,0 +1,340 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e8]:
+        - generic [ref=e10]: €
+        - generic [ref=e11]:
+          - heading "Budget Manager 2025" [level=1] [ref=e12]
+          - paragraph [ref=e13]: Deutsche Geschäfts-Budget-Verwaltung
+      - navigation "Hauptnavigation" [ref=e14]:
+        - button "📊 Dashboard Live" [ref=e15] [cursor=pointer]:
+          - generic [ref=e16] [cursor=pointer]:
+            - generic [ref=e17] [cursor=pointer]: 📊
+            - generic [ref=e18] [cursor=pointer]: Dashboard
+            - generic [ref=e19] [cursor=pointer]: Live
+        - button "💰 Budget-Verwaltung" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21] [cursor=pointer]:
+            - generic [ref=e22] [cursor=pointer]: 💰
+            - generic [ref=e23] [cursor=pointer]: Budget-Verwaltung
+        - button "🎯 3D Budget-Tracking" [ref=e24] [cursor=pointer]:
+          - generic [ref=e25] [cursor=pointer]:
+            - generic [ref=e26] [cursor=pointer]: 🎯
+            - generic [ref=e27] [cursor=pointer]: 3D Budget-Tracking
+        - button "🔄 Budget-Transfers" [ref=e28] [cursor=pointer]:
+          - generic [ref=e29] [cursor=pointer]:
+            - generic [ref=e30] [cursor=pointer]: 🔄
+            - generic [ref=e31] [cursor=pointer]: Budget-Transfers
+  - main [ref=e32]:
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - generic [ref=e37]:
+          - generic [ref=e39]: 💰
+          - generic [ref=e40]:
+            - heading "Budget-Verwaltung" [level=1] [ref=e41]
+            - paragraph [ref=e42]: Jahresbudgets erstellen, verwalten und überwachen
+        - generic [ref=e43]:
+          - generic [ref=e45]:
+            - generic [ref=e47]: 📊
+            - generic [ref=e48]:
+              - paragraph [ref=e49]: Gesamt Budgets
+              - paragraph [ref=e50]: "8"
+          - generic [ref=e52]:
+            - generic [ref=e54]: ✅
+            - generic [ref=e55]:
+              - paragraph [ref=e56]: Aktive Budgets
+              - paragraph [ref=e57]: "0"
+          - generic [ref=e59]:
+            - generic [ref=e61]: ⏳
+            - generic [ref=e62]:
+              - paragraph [ref=e63]: In Planung
+              - paragraph [ref=e64]: "0"
+          - generic [ref=e66]:
+            - generic [ref=e68]: 💶
+            - generic [ref=e69]:
+              - paragraph [ref=e70]: Gesamtvolumen
+              - paragraph [ref=e71]: 7.800.000 €
+      - navigation "Breadcrumb" [ref=e72]:
+        - list [ref=e73]:
+          - listitem [ref=e74]:
+            - button "Budget-Übersicht" [ref=e75] [cursor=pointer]:
+              - img [ref=e76] [cursor=pointer]
+              - text: Budget-Übersicht
+      - generic [ref=e79]:
+        - generic [ref=e80]:
+          - generic [ref=e81]:
+            - heading "Jahresbudgets" [level=1] [ref=e82]
+            - paragraph [ref=e83]: Verwalten Sie Ihre Jahresbudgets mit deutscher Geschäftslogik
+          - button "Neues Budget erstellen" [ref=e84] [cursor=pointer]:
+            - img [ref=e85] [cursor=pointer]
+            - text: Neues Budget erstellen
+        - generic [ref=e87]:
+          - generic [ref=e88]:
+            - generic [ref=e89]:
+              - generic [ref=e90]: Suche
+              - textbox "Suche" [ref=e91]
+            - generic [ref=e92]:
+              - generic [ref=e93]: Status
+              - combobox "Status" [ref=e94]:
+                - option "Alle (8)" [selected]
+                - option "Entwürfe (1)"
+                - option "Aktiv (6)"
+                - option "Geschlossen (1)"
+            - generic [ref=e95]:
+              - generic [ref=e96]: Jahr
+              - combobox "Jahr" [ref=e97]:
+                - option "Alle Jahre (8)" [selected]
+                - option "2031 (1)"
+                - option "2030 (1)"
+                - option "2029 (1)"
+                - option "2028 (1)"
+                - option "2027 (1)"
+                - option "2026 (1)"
+                - option "2025 (1)"
+                - option "2024 (1)"
+            - generic [ref=e98]:
+              - generic [ref=e99]: Sortieren nach
+              - combobox "Sortieren nach" [ref=e100]:
+                - option "Jahr" [selected]
+                - option "Gesamtbudget"
+                - option "Status"
+                - option "Erstellt"
+            - generic [ref=e101]:
+              - generic [ref=e102]: Reihenfolge
+              - button "Absteigend" [ref=e103] [cursor=pointer]:
+                - img [ref=e104] [cursor=pointer]
+                - generic [ref=e106] [cursor=pointer]: Absteigend
+          - generic [ref=e107]:
+            - button "🔄 Alle anzeigen (8)" [ref=e108] [cursor=pointer]
+            - button "✅ Aktive (6)" [ref=e109] [cursor=pointer]
+            - button "📝 Entwürfe (1)" [ref=e110] [cursor=pointer]
+            - button "📅 2025 (1)" [ref=e111] [cursor=pointer]
+        - generic [ref=e112]:
+          - generic [ref=e113]:
+            - generic [ref=e114]:
+              - heading "Jahresbudget 2031" [level=3] [ref=e116]
+              - generic [ref=e118]: Aktiv
+            - generic [ref=e119]:
+              - generic [ref=e120]:
+                - paragraph [ref=e121]: Gesamtbudget
+                - paragraph [ref=e122]: 1.500.000,00 €
+              - generic [ref=e123]:
+                - paragraph [ref=e124]: Reserve (10%)
+                - paragraph [ref=e125]: 150.000,00 €
+              - generic [ref=e126]:
+                - paragraph [ref=e127]: Verfügbar
+                - paragraph [ref=e128]: 1.500.000,00 €
+            - generic [ref=e130]:
+              - generic [ref=e131]: Budget-Auslastung
+              - generic [ref=e132]: 25%
+            - generic [ref=e135]:
+              - paragraph [ref=e136]: "Erstellt: 29.8.2025"
+              - paragraph [ref=e137]: "Aktualisiert: 29.8.2025"
+            - generic [ref=e138]:
+              - button "Details" [ref=e140] [cursor=pointer]:
+                - img [ref=e141] [cursor=pointer]
+                - text: Details
+              - button "Schließen" [ref=e145] [cursor=pointer]
+          - generic [ref=e146]:
+            - generic [ref=e147]:
+              - generic [ref=e148]:
+                - heading "Jahresbudget 2030" [level=3] [ref=e149]
+                - paragraph [ref=e150]: Test mit Number-Werten
+              - generic [ref=e152]: Aktiv
+            - generic [ref=e153]:
+              - generic [ref=e154]:
+                - paragraph [ref=e155]: Gesamtbudget
+                - paragraph [ref=e156]: 1.500.000,00 €
+              - generic [ref=e157]:
+                - paragraph [ref=e158]: Reserve (10%)
+                - paragraph [ref=e159]: 150.000,00 €
+              - generic [ref=e160]:
+                - paragraph [ref=e161]: Verfügbar
+                - paragraph [ref=e162]: 1.500.000,00 €
+            - generic [ref=e164]:
+              - generic [ref=e165]: Budget-Auslastung
+              - generic [ref=e166]: 25%
+            - generic [ref=e169]:
+              - paragraph [ref=e170]: "Erstellt: 29.8.2025"
+              - paragraph [ref=e171]: "Aktualisiert: 29.8.2025"
+            - generic [ref=e172]:
+              - button "Details" [ref=e174] [cursor=pointer]:
+                - img [ref=e175] [cursor=pointer]
+                - text: Details
+              - button "Schließen" [ref=e179] [cursor=pointer]
+          - generic [ref=e180]:
+            - generic [ref=e181]:
+              - generic [ref=e182]:
+                - heading "Jahresbudget 2029" [level=3] [ref=e183]
+                - paragraph [ref=e184]: Test Budget Frontend Debug
+              - generic [ref=e186]: Aktiv
+            - generic [ref=e187]:
+              - generic [ref=e188]:
+                - paragraph [ref=e189]: Gesamtbudget
+                - paragraph [ref=e190]: 1.500.000,00 €
+              - generic [ref=e191]:
+                - paragraph [ref=e192]: Reserve (10%)
+                - paragraph [ref=e193]: 150.000,00 €
+              - generic [ref=e194]:
+                - paragraph [ref=e195]: Verfügbar
+                - paragraph [ref=e196]: 1.500.000,00 €
+            - generic [ref=e198]:
+              - generic [ref=e199]: Budget-Auslastung
+              - generic [ref=e200]: 25%
+            - generic [ref=e203]:
+              - paragraph [ref=e204]: "Erstellt: 29.8.2025"
+              - paragraph [ref=e205]: "Aktualisiert: 29.8.2025"
+            - generic [ref=e206]:
+              - button "Details" [ref=e208] [cursor=pointer]:
+                - img [ref=e209] [cursor=pointer]
+                - text: Details
+              - button "Schließen" [ref=e213] [cursor=pointer]
+          - generic [ref=e214]:
+            - generic [ref=e215]:
+              - generic [ref=e216]:
+                - heading "Jahresbudget 2028" [level=3] [ref=e217]
+                - paragraph [ref=e218]: Test über Frontend-Proxy
+              - generic [ref=e220]: Aktiv
+            - generic [ref=e221]:
+              - generic [ref=e222]:
+                - paragraph [ref=e223]: Gesamtbudget
+                - paragraph [ref=e224]: 300.000,00 €
+              - generic [ref=e225]:
+                - paragraph [ref=e226]: Reserve (12%)
+                - paragraph [ref=e227]: 36.000,00 €
+              - generic [ref=e228]:
+                - paragraph [ref=e229]: Verfügbar
+                - paragraph [ref=e230]: 300.000,00 €
+            - generic [ref=e232]:
+              - generic [ref=e233]: Budget-Auslastung
+              - generic [ref=e234]: 25%
+            - generic [ref=e237]:
+              - paragraph [ref=e238]: "Erstellt: 29.8.2025"
+              - paragraph [ref=e239]: "Aktualisiert: 29.8.2025"
+            - generic [ref=e240]:
+              - button "Details" [ref=e242] [cursor=pointer]:
+                - img [ref=e243] [cursor=pointer]
+                - text: Details
+              - button "Schließen" [ref=e247] [cursor=pointer]
+          - generic [ref=e248]:
+            - generic [ref=e249]:
+              - generic [ref=e250]:
+                - heading "Jahresbudget 2027" [level=3] [ref=e251]
+                - paragraph [ref=e252]: Test Budget für Supabase Check
+              - generic [ref=e254]: Aktiv
+            - generic [ref=e255]:
+              - generic [ref=e256]:
+                - paragraph [ref=e257]: Gesamtbudget
+                - paragraph [ref=e258]: 1.500.000,00 €
+              - generic [ref=e259]:
+                - paragraph [ref=e260]: Reserve (10%)
+                - paragraph [ref=e261]: 150.000,00 €
+              - generic [ref=e262]:
+                - paragraph [ref=e263]: Verfügbar
+                - paragraph [ref=e264]: 1.500.000,00 €
+            - generic [ref=e266]:
+              - generic [ref=e267]: Budget-Auslastung
+              - generic [ref=e268]: 25%
+            - generic [ref=e271]:
+              - paragraph [ref=e272]: "Erstellt: 29.8.2025"
+              - paragraph [ref=e273]: "Aktualisiert: 29.8.2025"
+            - generic [ref=e274]:
+              - button "Details" [ref=e276] [cursor=pointer]:
+                - img [ref=e277] [cursor=pointer]
+                - text: Details
+              - button "Schließen" [ref=e281] [cursor=pointer]
+          - generic [ref=e282]:
+            - generic [ref=e283]:
+              - generic [ref=e284]:
+                - heading "Jahresbudget 2026" [level=3] [ref=e285]
+                - paragraph [ref=e286]: E2E Test Budget 2026 - Entwurf für Tests
+              - generic [ref=e288]: Entwurf
+            - generic [ref=e289]:
+              - generic [ref=e290]:
+                - paragraph [ref=e291]: Gesamtbudget
+                - paragraph [ref=e292]: 600.000,00 €
+              - generic [ref=e293]:
+                - paragraph [ref=e294]: Reserve (8%)
+                - paragraph [ref=e295]: 48.000,00 €
+              - generic [ref=e296]:
+                - paragraph [ref=e297]: Verfügbar
+                - paragraph [ref=e298]: 600.000,00 €
+            - generic [ref=e299]:
+              - paragraph [ref=e300]: "Erstellt: 29.8.2025"
+              - paragraph [ref=e301]: "Aktualisiert: 29.8.2025"
+            - generic [ref=e302]:
+              - generic [ref=e303]:
+                - button "Details" [ref=e304] [cursor=pointer]:
+                  - img [ref=e305] [cursor=pointer]
+                  - text: Details
+                - button "Bearbeiten" [ref=e308] [cursor=pointer]:
+                  - img [ref=e309] [cursor=pointer]
+                  - text: Bearbeiten
+                - button "Löschen" [ref=e311] [cursor=pointer]:
+                  - img [ref=e312] [cursor=pointer]
+                  - text: Löschen
+              - button "Aktivieren" [ref=e315] [cursor=pointer]
+          - generic [ref=e316]:
+            - generic [ref=e317]:
+              - generic [ref=e318]:
+                - heading "Jahresbudget 2025" [level=3] [ref=e319]
+                - paragraph [ref=e320]: E2E Test Budget 2025 - Hauptbudget für Tests
+              - generic [ref=e322]: Aktiv
+            - generic [ref=e323]:
+              - generic [ref=e324]:
+                - paragraph [ref=e325]: Gesamtbudget
+                - paragraph [ref=e326]: 500.000,00 €
+              - generic [ref=e327]:
+                - paragraph [ref=e328]: Reserve (10%)
+                - paragraph [ref=e329]: 50.000,00 €
+              - generic [ref=e330]:
+                - paragraph [ref=e331]: Verfügbar
+                - paragraph [ref=e332]: 450.000,00 €
+            - generic [ref=e334]:
+              - generic [ref=e335]: Budget-Auslastung
+              - generic [ref=e336]: 25%
+            - generic [ref=e339]:
+              - paragraph [ref=e340]: "Erstellt: 29.8.2025"
+              - paragraph [ref=e341]: "Aktualisiert: 29.8.2025"
+            - generic [ref=e342]:
+              - button "Details" [ref=e344] [cursor=pointer]:
+                - img [ref=e345] [cursor=pointer]
+                - text: Details
+              - button "Schließen" [ref=e349] [cursor=pointer]
+          - generic [ref=e350]:
+            - generic [ref=e351]:
+              - generic [ref=e352]:
+                - heading "Jahresbudget 2024" [level=3] [ref=e353]
+                - paragraph [ref=e354]: E2E Test Budget 2024 - Abgeschlossenes Budget
+              - generic [ref=e356]: Geschlossen
+            - generic [ref=e357]:
+              - generic [ref=e358]:
+                - paragraph [ref=e359]: Gesamtbudget
+                - paragraph [ref=e360]: 400.000,00 €
+              - generic [ref=e361]:
+                - paragraph [ref=e362]: Reserve (15%)
+                - paragraph [ref=e363]: 60.000,00 €
+              - generic [ref=e364]:
+                - paragraph [ref=e365]: Verfügbar
+                - paragraph [ref=e366]: 340.000,00 €
+            - generic [ref=e367]:
+              - paragraph [ref=e368]: "Erstellt: 29.8.2025"
+              - paragraph [ref=e369]: "Aktualisiert: 29.8.2025"
+            - button "Details" [ref=e372] [cursor=pointer]:
+              - img [ref=e373] [cursor=pointer]
+              - text: Details
+  - contentinfo [ref=e376]:
+    - generic [ref=e377]:
+      - generic [ref=e378]:
+        - paragraph [ref=e380]:
+          - generic [ref=e381]: © 2025 Budget Manager
+          - generic [ref=e383]: 🇩🇪 Entwickelt mit deutscher Präzision
+        - generic [ref=e384]:
+          - generic [ref=e387]: System aktiv
+          - generic [ref=e388]:
+            - generic [ref=e389]: Powered by
+            - generic [ref=e390]: React + TypeScript + Tailwind CSS
+      - paragraph [ref=e392]: "💡 Tipp: Verwende Alt+1-4 für schnelle Navigation zwischen den Seiten"
+```

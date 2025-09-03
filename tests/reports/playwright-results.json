@@ -1,0 +1,546 @@
+{
+  "config": {
+    "configFile": "/Users/krg/projects/innotech/bdgt/playwright.config.js",
+    "rootDir": "/Users/krg/projects/innotech/bdgt/tests/e2e",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": "/Users/krg/projects/innotech/bdgt/tests/e2e/global-setup.js",
+    "globalTeardown": "/Users/krg/projects/innotech/bdgt/tests/e2e/global-teardown.js",
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 5
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "tests/reports/playwright-results.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "tests/reports/playwright-report",
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/krg/projects/innotech/bdgt/tests/reports/playwright-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 5
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/krg/projects/innotech/bdgt/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/krg/projects/innotech/bdgt/tests/reports/playwright-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 5
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/krg/projects/innotech/bdgt/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/krg/projects/innotech/bdgt/tests/reports/playwright-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 5
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/krg/projects/innotech/bdgt/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/krg/projects/innotech/bdgt/tests/reports/playwright-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 5
+        },
+        "id": "Mobile Chrome",
+        "name": "Mobile Chrome",
+        "testDir": "/Users/krg/projects/innotech/bdgt/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/krg/projects/innotech/bdgt/tests/reports/playwright-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 5
+        },
+        "id": "Mobile Safari",
+        "name": "Mobile Safari",
+        "testDir": "/Users/krg/projects/innotech/bdgt/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/krg/projects/innotech/bdgt/tests/reports/playwright-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 5
+        },
+        "id": "Microsoft Edge",
+        "name": "Microsoft Edge",
+        "testDir": "/Users/krg/projects/innotech/bdgt/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/krg/projects/innotech/bdgt/tests/reports/playwright-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 5
+        },
+        "id": "Google Chrome",
+        "name": "Google Chrome",
+        "testDir": "/Users/krg/projects/innotech/bdgt/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.55.0",
+    "workers": 5,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "user-journeys/story-1-1-annual-budget-management.e2e.test.js",
+      "file": "user-journeys/story-1-1-annual-budget-management.e2e.test.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Story 1.1: Jahresbudget-Verwaltung E2E",
+          "file": "user-journeys/story-1-1-annual-budget-management.e2e.test.js",
+          "line": 12,
+          "column": 6,
+          "specs": [
+            {
+              "title": "1.1-E2E-001: Vollständiger Jahresbudget-Erstellungs-Workflow",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 9596,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "ℹ️ [E2E.STORY.1.1] E2E Test Setup abgeschlossen\n"
+                        },
+                        {
+                          "text": "ℹ️ [E2E.STORY.1.1] Verwende Selektor: [data-testid=\"nav-budget-management\"]\n"
+                        },
+                        {
+                          "text": "✅ [E2E.STORY.1.1] Navigation zur Budget-Seite erfolgreich\n"
+                        },
+                        {
+                          "text": "ℹ️ [E2E.STORY.1.1] Create-Button gefunden mit Selektor: [data-testid=\"create-budget-btn\"]\n"
+                        },
+                        {
+                          "text": "✅ [E2E.STORY.1.1] Budget-Formular ausgefüllt\n"
+                        },
+                        {
+                          "text": "ℹ️ [E2E.STORY.1.1] Zurück zur Budget-Seite - Budget möglicherweise erfolgreich erstellt\n"
+                        },
+                        {
+                          "text": "✅ [E2E.STORY.1.1] Budget erfolgreich gespeichert\n"
+                        },
+                        {
+                          "text": "✅ [E2E.STORY.1.1] Deutsche Währungsformatierung korrekt: 500.000,00 €\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Navigation zur Budget-Verwaltung",
+                          "duration": 227
+                        },
+                        {
+                          "title": "Neues Jahresbudget erstellen",
+                          "duration": 6459
+                        },
+                        {
+                          "title": "Budget speichern",
+                          "duration": 2040
+                        },
+                        {
+                          "title": "Deutsche Währungsformatierung validieren",
+                          "duration": 30
+                        }
+                      ],
+                      "startTime": "2025-08-29T11:26:30.557Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5510097b0ced87ab40c5-d26ea6ed271c6d502218",
+              "file": "user-journeys/story-1-1-annual-budget-management.e2e.test.js",
+              "line": 39,
+              "column": 3
+            },
+            {
+              "title": "1.1-E2E-002: Budget-Liste und Filterung",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 6434,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "ℹ️ [E2E.STORY.1.1] E2E Test Setup abgeschlossen\n"
+                        },
+                        {
+                          "text": "✅ [E2E.STORY.1.1] Budget-Liste erfolgreich geladen\n"
+                        },
+                        {
+                          "text": "⚠️ [E2E.STORY.1.1] Jahr-Filter nicht gefunden\n"
+                        },
+                        {
+                          "text": "⚠️ [E2E.STORY.1.1] Suchfunktion nicht gefunden\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Budget-Liste laden",
+                          "duration": 5469
+                        },
+                        {
+                          "title": "Jahr-Filter testen",
+                          "duration": 2
+                        },
+                        {
+                          "title": "Suchfunktion testen",
+                          "duration": 1
+                        }
+                      ],
+                      "startTime": "2025-08-29T11:26:30.566Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5510097b0ced87ab40c5-bf0f4a2f8e189e06c0ac",
+              "file": "user-journeys/story-1-1-annual-budget-management.e2e.test.js",
+              "line": 239,
+              "column": 3
+            },
+            {
+              "title": "1.1-E2E-003: Budget-Details und Bearbeitung",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1579,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "ℹ️ [E2E.STORY.1.1] E2E Test Setup abgeschlossen\n"
+                        },
+                        {
+                          "text": "⚠️ [E2E.STORY.1.1] Kein Budget zum Öffnen gefunden\n"
+                        },
+                        {
+                          "text": "⚠️ [E2E.STORY.1.1] Bearbeiten-Button nicht gefunden\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Budget-Details öffnen",
+                          "duration": 589
+                        },
+                        {
+                          "title": "Budget bearbeiten",
+                          "duration": 3
+                        }
+                      ],
+                      "startTime": "2025-08-29T11:26:30.559Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5510097b0ced87ab40c5-50ea35398125b1cd9877",
+              "file": "user-journeys/story-1-1-annual-budget-management.e2e.test.js",
+              "line": 281,
+              "column": 3
+            },
+            {
+              "title": "1.1-E2E-004: Budget-Validierung und Fehlermeldungen",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 1506,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "ℹ️ [E2E.STORY.1.1] E2E Test Setup abgeschlossen\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Ungültige Eingaben testen",
+                          "duration": 586
+                        }
+                      ],
+                      "startTime": "2025-08-29T11:26:30.556Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5510097b0ced87ab40c5-f5e3bde2a49a6880ee7e",
+              "file": "user-journeys/story-1-1-annual-budget-management.e2e.test.js",
+              "line": 331,
+              "column": 3
+            },
+            {
+              "title": "1.1-E2E-005: Responsive Design und Mobile Ansicht",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 7511,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "ℹ️ [E2E.STORY.1.1] E2E Test Setup abgeschlossen\n"
+                        },
+                        {
+                          "text": "ℹ️ [E2E.STORY.1.1] Mobile: Menu-Button gefunden mit Selektor: [data-testid=\"mobile-menu-button\"]\n"
+                        },
+                        {
+                          "text": "✅ [E2E.STORY.1.1] Mobile Navigation funktioniert\n"
+                        },
+                        {
+                          "text": "✅ [E2E.STORY.1.1] Mobile Ansicht funktioniert korrekt\n"
+                        },
+                        {
+                          "text": "ℹ️ [E2E.STORY.1.1] Tablet: Hauptinhalt ist sichtbar (Budget-Liste möglicherweise leer)\n"
+                        },
+                        {
+                          "text": "✅ [E2E.STORY.1.1] Tablet Ansicht funktioniert korrekt\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Mobile Viewport testen",
+                          "duration": 6063
+                        },
+                        {
+                          "title": "Tablet Viewport testen",
+                          "duration": 572
+                        }
+                      ],
+                      "startTime": "2025-08-29T11:26:30.557Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5510097b0ced87ab40c5-fa3bd3371281d7f2a656",
+              "file": "user-journeys/story-1-1-annual-budget-management.e2e.test.js",
+              "line": 364,
+              "column": 3
+            },
+            {
+              "title": "1.1-E2E-006: Performance und Ladezeiten",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 1756,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "ℹ️ [E2E.STORY.1.1] E2E Test Setup abgeschlossen\n"
+                        },
+                        {
+                          "text": "✅ [E2E.STORY.1.1] Excellent Ladezeit: 559ms\n"
+                        },
+                        {
+                          "text": "ℹ️ [E2E.STORY.1.1] 0 API-Aufrufe überwacht\n"
+                        },
+                        {
+                          "text": "✅ [E2E.STORY.1.1] Alle API-Aufrufe unter 1s\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Seitenladezeit messen",
+                          "duration": 563
+                        },
+                        {
+                          "title": "API Response Zeiten",
+                          "duration": 542
+                        }
+                      ],
+                      "startTime": "2025-08-29T11:26:32.325Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5510097b0ced87ab40c5-f2fd70e34596707e5b20",
+              "file": "user-journeys/story-1-1-annual-budget-management.e2e.test.js",
+              "line": 449,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-08-29T11:26:27.523Z",
+    "duration": 12905.23,
+    "expected": 6,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

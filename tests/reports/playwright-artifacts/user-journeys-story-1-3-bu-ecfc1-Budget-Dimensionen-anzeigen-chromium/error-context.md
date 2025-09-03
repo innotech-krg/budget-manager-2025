@@ -1,0 +1,187 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e8]:
+        - generic [ref=e10]: €
+        - generic [ref=e11]:
+          - heading "Budget Manager 2025" [level=1] [ref=e12]
+          - paragraph [ref=e13]: Deutsche Geschäfts-Budget-Verwaltung
+      - navigation "Hauptnavigation" [ref=e14]:
+        - button "📊 Dashboard Live" [ref=e15] [cursor=pointer]:
+          - generic [ref=e16] [cursor=pointer]:
+            - generic [ref=e17] [cursor=pointer]: 📊
+            - generic [ref=e18] [cursor=pointer]: Dashboard
+            - generic [ref=e19] [cursor=pointer]: Live
+        - button "💰 Budget-Verwaltung" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21] [cursor=pointer]:
+            - generic [ref=e22] [cursor=pointer]: 💰
+            - generic [ref=e23] [cursor=pointer]: Budget-Verwaltung
+        - button "🎯 3D Budget-Tracking" [ref=e24] [cursor=pointer]:
+          - generic [ref=e25] [cursor=pointer]:
+            - generic [ref=e26] [cursor=pointer]: 🎯
+            - generic [ref=e27] [cursor=pointer]: 3D Budget-Tracking
+        - button "🔄 Budget-Transfers" [ref=e28] [cursor=pointer]:
+          - generic [ref=e29] [cursor=pointer]:
+            - generic [ref=e30] [cursor=pointer]: 🔄
+            - generic [ref=e31] [cursor=pointer]: Budget-Transfers
+  - main [ref=e32]:
+    - generic [ref=e36]:
+      - generic [ref=e37]:
+        - heading "📊 Dreidimensionales Budget-Tracking" [level=1] [ref=e38]
+        - paragraph [ref=e39]: Überwachen Sie Veranschlagt, Zugewiesen und Verbraucht für alle Projekte
+      - generic [ref=e40]:
+        - heading "Budget-Übersicht" [level=2] [ref=e41]
+        - generic [ref=e42]:
+          - generic [ref=e43]:
+            - generic [ref=e44]: "1"
+            - generic [ref=e45]: 🟢 Gesund
+          - generic [ref=e46]:
+            - generic [ref=e47]: "1"
+            - generic [ref=e48]: 🟡 Warnung
+          - generic [ref=e49]:
+            - generic [ref=e50]: "1"
+            - generic [ref=e51]: 🟠 Kritisch
+          - generic [ref=e52]:
+            - generic [ref=e53]: "1"
+            - generic [ref=e54]: 🔴 Überschritten
+        - generic [ref=e55]:
+          - generic [ref=e56]:
+            - generic [ref=e57]: 🎯 Gesamt Veranschlagt
+            - generic [ref=e58]: 120.000,00 €
+          - generic [ref=e59]:
+            - generic [ref=e60]: 💰 Gesamt Zugewiesen
+            - generic [ref=e61]: 110.000,00 €
+          - generic [ref=e62]:
+            - generic [ref=e63]: 📊 Gesamt Verbraucht
+            - generic [ref=e64]: 90.500,00 €
+      - generic [ref=e66]:
+        - button "Alle (4)" [ref=e67] [cursor=pointer]
+        - button "🟢 Gesund (1)" [ref=e68] [cursor=pointer]
+        - button "🟡 Warnung (1)" [ref=e69] [cursor=pointer]
+        - button "🟠 Kritisch (1)" [ref=e70] [cursor=pointer]
+        - button "🔴 Überschritten (1)" [ref=e71] [cursor=pointer]
+      - generic [ref=e72]:
+        - generic [ref=e73]:
+          - generic [ref=e74]:
+            - generic [ref=e75]:
+              - heading "Website Redesign 2025" [level=3] [ref=e76]
+              - paragraph [ref=e77]: WD-2025-001
+              - generic [ref=e78]: IT & Software
+            - generic [ref=e79]:
+              - generic [ref=e80]: 🟡
+              - generic [ref=e81]: Warnung
+              - generic [ref=e82]: (71.1%)
+          - generic [ref=e85]:
+            - generic [ref=e86]:
+              - generic [ref=e87]: "🎯 Veranschlagt:"
+              - generic [ref=e88]: 50.000,00 €
+            - generic [ref=e89]:
+              - generic [ref=e90]: "💰 Zugewiesen:"
+              - generic [ref=e91]: 45.000,00 €
+            - generic [ref=e92]:
+              - generic [ref=e93]: "📊 Verbraucht:"
+              - generic [ref=e94]: 32.000,00 €
+            - generic [ref=e97]:
+              - generic [ref=e98]: "💳 Verbleibend:"
+              - generic [ref=e99]: 13.000,00 €
+          - generic [ref=e101]: "Team: Development Team"
+          - generic [ref=e102]:
+            - button "Budget anpassen" [ref=e103] [cursor=pointer]
+            - button "Ausgabe hinzufügen" [ref=e104] [cursor=pointer]
+        - generic [ref=e105]:
+          - generic [ref=e106]:
+            - generic [ref=e107]:
+              - heading "Marketing Kampagne Q1" [level=3] [ref=e108]
+              - paragraph [ref=e109]: WD-2025-002
+              - generic [ref=e110]: Marketing & Werbung
+            - generic [ref=e111]:
+              - generic [ref=e112]: 🟢
+              - generic [ref=e113]: Gesund
+              - generic [ref=e114]: (60.0%)
+          - generic [ref=e117]:
+            - generic [ref=e118]:
+              - generic [ref=e119]: "🎯 Veranschlagt:"
+              - generic [ref=e120]: 25.000,00 €
+            - generic [ref=e121]:
+              - generic [ref=e122]: "💰 Zugewiesen:"
+              - generic [ref=e123]: 25.000,00 €
+            - generic [ref=e124]:
+              - generic [ref=e125]: "📊 Verbraucht:"
+              - generic [ref=e126]: 15.000,00 €
+            - generic [ref=e129]:
+              - generic [ref=e130]: "💳 Verbleibend:"
+              - generic [ref=e131]: 10.000,00 €
+          - generic [ref=e133]: "Team: Marketing Team"
+          - generic [ref=e134]:
+            - button "Budget anpassen" [ref=e135] [cursor=pointer]
+            - button "Ausgabe hinzufügen" [ref=e136] [cursor=pointer]
+        - generic [ref=e137]:
+          - generic [ref=e138]:
+            - generic [ref=e139]:
+              - heading "Büroausstattung Upgrade" [level=3] [ref=e140]
+              - paragraph [ref=e141]: WD-2025-003
+              - generic [ref=e142]: Büroausstattung
+            - generic [ref=e143]:
+              - generic [ref=e144]: 🟠
+              - generic [ref=e145]: Kritisch
+              - generic [ref=e146]: (95.8%)
+          - generic [ref=e149]:
+            - generic [ref=e150]:
+              - generic [ref=e151]: "🎯 Veranschlagt:"
+              - generic [ref=e152]: 15.000,00 €
+            - generic [ref=e153]:
+              - generic [ref=e154]: "💰 Zugewiesen:"
+              - generic [ref=e155]: 12.000,00 €
+            - generic [ref=e156]:
+              - generic [ref=e157]: "📊 Verbraucht:"
+              - generic [ref=e158]: 11.500,00 €
+            - generic [ref=e161]:
+              - generic [ref=e162]: "💳 Verbleibend:"
+              - generic [ref=e163]: 500,00 €
+          - generic [ref=e165]: "Team: Admin Team"
+          - generic [ref=e166]:
+            - button "Budget anpassen" [ref=e167] [cursor=pointer]
+            - button "Ausgabe hinzufügen" [ref=e168] [cursor=pointer]
+        - generic [ref=e169]:
+          - generic [ref=e170]:
+            - generic [ref=e171]:
+              - heading "Server Migration" [level=3] [ref=e172]
+              - paragraph [ref=e173]: WD-2025-004
+              - generic [ref=e174]: IT & Software
+            - generic [ref=e175]:
+              - generic [ref=e176]: 🔴
+              - generic [ref=e177]: Überschritten
+              - generic [ref=e178]: (114.3%)
+          - generic [ref=e181]:
+            - generic [ref=e182]:
+              - generic [ref=e183]: "🎯 Veranschlagt:"
+              - generic [ref=e184]: 30.000,00 €
+            - generic [ref=e185]:
+              - generic [ref=e186]: "💰 Zugewiesen:"
+              - generic [ref=e187]: 28.000,00 €
+            - generic [ref=e188]:
+              - generic [ref=e189]: "📊 Verbraucht:"
+              - generic [ref=e190]: 32.000,00 €
+            - generic [ref=e193]:
+              - generic [ref=e194]: "💳 Verbleibend:"
+              - generic [ref=e195]: "-4.000,00 €"
+          - generic [ref=e197]: "Team: Development Team"
+          - generic [ref=e198]:
+            - button "Budget anpassen" [ref=e199] [cursor=pointer]
+            - button "Ausgabe hinzufügen" [ref=e200] [cursor=pointer]
+  - contentinfo [ref=e201]:
+    - generic [ref=e202]:
+      - generic [ref=e203]:
+        - paragraph [ref=e205]:
+          - generic [ref=e206]: © 2025 Budget Manager
+          - generic [ref=e208]: 🇩🇪 Entwickelt mit deutscher Präzision
+        - generic [ref=e209]:
+          - generic [ref=e212]: System aktiv
+          - generic [ref=e213]:
+            - generic [ref=e214]: Powered by
+            - generic [ref=e215]: React + TypeScript + Tailwind CSS
+      - paragraph [ref=e217]: "💡 Tipp: Verwende Alt+1-4 für schnelle Navigation zwischen den Seiten"
+```

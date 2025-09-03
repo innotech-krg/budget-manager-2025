@@ -1,0 +1,43 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e8]:
+        - generic [ref=e10]: €
+        - generic [ref=e11]:
+          - heading "Budget Manager 2025" [level=1] [ref=e12]
+          - paragraph [ref=e13]: Deutsche Geschäfts-Budget-Verwaltung
+      - navigation "Hauptnavigation" [ref=e14]:
+        - button "📊 Dashboard Live" [ref=e15] [cursor=pointer]:
+          - generic [ref=e16] [cursor=pointer]:
+            - generic [ref=e17] [cursor=pointer]: 📊
+            - generic [ref=e18] [cursor=pointer]: Dashboard
+            - generic [ref=e19] [cursor=pointer]: Live
+        - button "💰 Budget-Verwaltung" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21] [cursor=pointer]:
+            - generic [ref=e22] [cursor=pointer]: 💰
+            - generic [ref=e23] [cursor=pointer]: Budget-Verwaltung
+        - button "🎯 3D Budget-Tracking" [ref=e24] [cursor=pointer]:
+          - generic [ref=e25] [cursor=pointer]:
+            - generic [ref=e26] [cursor=pointer]: 🎯
+            - generic [ref=e27] [cursor=pointer]: 3D Budget-Tracking
+        - button "🔄 Budget-Transfers" [ref=e28] [cursor=pointer]:
+          - generic [ref=e29] [cursor=pointer]:
+            - generic [ref=e30] [cursor=pointer]: 🔄
+            - generic [ref=e31] [cursor=pointer]: Budget-Transfers
+  - main [ref=e32]
+  - contentinfo [ref=e33]:
+    - generic [ref=e34]:
+      - generic [ref=e35]:
+        - paragraph [ref=e37]:
+          - generic [ref=e38]: © 2025 Budget Manager
+          - generic [ref=e40]: 🇩🇪 Entwickelt mit deutscher Präzision
+        - generic [ref=e41]:
+          - generic [ref=e44]: System aktiv
+          - generic [ref=e45]:
+            - generic [ref=e46]: Powered by
+            - generic [ref=e47]: React + TypeScript + Tailwind CSS
+      - paragraph [ref=e49]: "💡 Tipp: Verwende Alt+1-4 für schnelle Navigation zwischen den Seiten"
+```

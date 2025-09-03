@@ -1,0 +1,76 @@
+{
+  "name": "budget-manager-2025",
+  "version": "1.0.0",
+  "description": "Deutsche Geschäfts-Budget-Management-System - Full Stack Application",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/start-dev.js",
+    "dev:manual": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "ports:config": "node scripts/port-manager.js configure",
+    "ports:status": "node scripts/port-manager.js status",
+    "ports:kill": "node scripts/port-manager.js kill",
+    "build": "npm run build:backend && npm run build:frontend",
+    "build:backend": "cd backend && npm run build",
+    "build:frontend": "cd frontend && npm run build",
+    "start": "cd backend && npm start",
+    "test": "node tests/test-master.js",
+    "test:unit": "node tests/test-master.js unit",
+    "test:integration": "node tests/test-master.js integration",
+    "test:e2e": "node tests/test-master.js e2e",
+    "test:e2e:clean": "./scripts/run-e2e-tests.sh",
+    "test:e2e:story-1-1": "./scripts/run-e2e-tests.sh --story-1-1",
+    "test:stories": "node tests/test-master.js stories",
+    "test:system": "node tests/test-master.js system",
+    "test:all": "node tests/test-master.js all",
+    "test:coverage": "node tests/test-master.js coverage",
+    "test:cleanup": "node tests/test-master.js cleanup",
+    "test:config": "node tests/test-master.js config",
+    "test:backend": "cd backend && npm test",
+    "test:frontend": "cd frontend && npm test",
+    "lint": "npm run lint:backend && npm run lint:frontend",
+    "lint:backend": "cd backend && npm run lint",
+    "lint:frontend": "cd frontend && npm run lint",
+    "format": "npm run format:backend && npm run format:frontend",
+    "format:backend": "cd backend && npm run format",
+    "format:frontend": "cd frontend && npm run format",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "clean": "rm -rf node_modules backend/node_modules frontend/node_modules",
+    "setup": "npm run install:all && npm run setup:env",
+    "setup:env": "cp backend/.env.example backend/.env && cp frontend/.env.example frontend/.env",
+    "db:migrate": "cd database && psql -d budget_manager -f 01_epic01_budget_management_schema.sql",
+    "db:reset": "echo 'Database reset functionality to be implemented'",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "docker:build": "docker-compose build"
+  },
+  "keywords": [
+    "budget",
+    "management",
+    "german",
+    "business",
+    "fullstack",
+    "react",
+    "nodejs",
+    "postgresql",
+    "supabase"
+  ],
+  "author": "InnoTech Development Team",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "concurrently": "^8.2.2"
+  },
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "dependencies": {
+    "uuid": "^11.1.0"
+  }
+}

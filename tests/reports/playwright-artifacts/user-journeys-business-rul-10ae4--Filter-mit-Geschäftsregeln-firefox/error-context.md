@@ -1,0 +1,153 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e8]:
+        - generic [ref=e10]: €
+        - generic [ref=e11]:
+          - heading "Budget Manager 2025" [level=1] [ref=e12]
+          - paragraph [ref=e13]: Deutsche Geschäfts-Budget-Verwaltung
+      - navigation "Hauptnavigation" [ref=e14]:
+        - button "📊 Dashboard Live" [ref=e15] [cursor=pointer]:
+          - generic [ref=e16] [cursor=pointer]:
+            - generic [ref=e17] [cursor=pointer]: 📊
+            - generic [ref=e18] [cursor=pointer]: Dashboard
+            - generic [ref=e19] [cursor=pointer]: Live
+        - button "💰 Budget-Verwaltung" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21] [cursor=pointer]:
+            - generic [ref=e22] [cursor=pointer]: 💰
+            - generic [ref=e23] [cursor=pointer]: Budget-Verwaltung
+        - button "🎯 3D Budget-Tracking" [ref=e24] [cursor=pointer]:
+          - generic [ref=e25] [cursor=pointer]:
+            - generic [ref=e26] [cursor=pointer]: 🎯
+            - generic [ref=e27] [cursor=pointer]: 3D Budget-Tracking
+        - button "🔄 Budget-Transfers" [ref=e28] [cursor=pointer]:
+          - generic [ref=e29] [cursor=pointer]:
+            - generic [ref=e30] [cursor=pointer]: 🔄
+            - generic [ref=e31] [cursor=pointer]: Budget-Transfers
+  - main [ref=e32]:
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - generic [ref=e37]:
+          - generic [ref=e39]: 💰
+          - generic [ref=e40]:
+            - heading "Budget-Verwaltung" [level=1] [ref=e41]
+            - paragraph [ref=e42]: Jahresbudgets erstellen, verwalten und überwachen
+        - generic [ref=e43]:
+          - generic [ref=e45]:
+            - generic [ref=e47]: 📊
+            - generic [ref=e48]:
+              - paragraph [ref=e49]: Gesamt Budgets
+              - paragraph [ref=e50]: "8"
+          - generic [ref=e52]:
+            - generic [ref=e54]: ✅
+            - generic [ref=e55]:
+              - paragraph [ref=e56]: Aktive Budgets
+              - paragraph [ref=e57]: "0"
+          - generic [ref=e59]:
+            - generic [ref=e61]: ⏳
+            - generic [ref=e62]:
+              - paragraph [ref=e63]: In Planung
+              - paragraph [ref=e64]: "0"
+          - generic [ref=e66]:
+            - generic [ref=e68]: 💶
+            - generic [ref=e69]:
+              - paragraph [ref=e70]: Gesamtvolumen
+              - paragraph [ref=e71]: 7.800.000 €
+      - navigation "Breadcrumb" [ref=e72]:
+        - list [ref=e73]:
+          - listitem [ref=e74]:
+            - button "Budget-Übersicht" [ref=e75] [cursor=pointer]:
+              - img [ref=e76] [cursor=pointer]
+              - text: Budget-Übersicht
+      - generic [ref=e79]:
+        - generic [ref=e80]:
+          - generic [ref=e81]:
+            - heading "Jahresbudgets" [level=1] [ref=e82]
+            - paragraph [ref=e83]: Verwalten Sie Ihre Jahresbudgets mit deutscher Geschäftslogik
+          - button "Neues Budget erstellen" [ref=e84] [cursor=pointer]:
+            - img [ref=e85] [cursor=pointer]
+            - text: Neues Budget erstellen
+        - generic [ref=e87]:
+          - generic [ref=e88]:
+            - generic [ref=e89]:
+              - generic [ref=e90]: Suche
+              - textbox "Suche" [ref=e91]
+            - generic [ref=e92]:
+              - generic [ref=e93]: Status
+              - combobox "Status" [ref=e94]:
+                - option "Alle (8)" [selected]
+                - option "Entwürfe (1)"
+                - option "Aktiv (6)"
+                - option "Geschlossen (1)"
+            - generic [ref=e95]:
+              - generic [ref=e96]: Jahr
+              - combobox "Jahr" [ref=e97]:
+                - option "Alle Jahre (8)"
+                - option "2031 (1)"
+                - option "2030 (1)"
+                - option "2029 (1)"
+                - option "2028 (1)"
+                - option "2027 (1)"
+                - option "2026 (1)"
+                - option "2025 (1)" [selected]
+                - option "2024 (1)"
+            - generic [ref=e98]:
+              - generic [ref=e99]: Sortieren nach
+              - combobox "Sortieren nach" [ref=e100]:
+                - option "Jahr" [selected]
+                - option "Gesamtbudget"
+                - option "Status"
+                - option "Erstellt"
+            - generic [ref=e101]:
+              - generic [ref=e102]: Reihenfolge
+              - button "Absteigend" [ref=e103] [cursor=pointer]:
+                - img [ref=e104] [cursor=pointer]
+                - generic [ref=e106] [cursor=pointer]: Absteigend
+          - generic [ref=e107]:
+            - button "🔄 Alle anzeigen (8)" [ref=e108] [cursor=pointer]
+            - button "✅ Aktive (6)" [ref=e109] [cursor=pointer]
+            - button "📝 Entwürfe (1)" [ref=e110] [cursor=pointer]
+            - button "📅 2025 (1)" [ref=e111] [cursor=pointer]
+        - generic [ref=e113]:
+          - generic [ref=e114]:
+            - generic [ref=e115]:
+              - heading "Jahresbudget 2025" [level=3] [ref=e116]
+              - paragraph [ref=e117]: E2E Test Budget 2025 - Hauptbudget für Tests
+            - generic [ref=e119]: Aktiv
+          - generic [ref=e120]:
+            - generic [ref=e121]:
+              - paragraph [ref=e122]: Gesamtbudget
+              - paragraph [ref=e123]: 500.000,00 €
+            - generic [ref=e124]:
+              - paragraph [ref=e125]: Reserve (10%)
+              - paragraph [ref=e126]: 50.000,00 €
+            - generic [ref=e127]:
+              - paragraph [ref=e128]: Verfügbar
+              - paragraph [ref=e129]: 450.000,00 €
+          - generic [ref=e131]:
+            - generic [ref=e132]: Budget-Auslastung
+            - generic [ref=e133]: 25%
+          - generic [ref=e136]:
+            - paragraph [ref=e137]: "Erstellt: 29.8.2025"
+            - paragraph [ref=e138]: "Aktualisiert: 29.8.2025"
+          - generic [ref=e139]:
+            - button "Details" [ref=e141] [cursor=pointer]:
+              - img [ref=e142] [cursor=pointer]
+              - text: Details
+            - button "Schließen" [ref=e146] [cursor=pointer]
+  - contentinfo [ref=e147]:
+    - generic [ref=e148]:
+      - generic [ref=e149]:
+        - paragraph [ref=e151]:
+          - generic [ref=e152]: © 2025 Budget Manager
+          - generic [ref=e154]: 🇩🇪 Entwickelt mit deutscher Präzision
+        - generic [ref=e155]:
+          - generic [ref=e158]: System aktiv
+          - generic [ref=e159]:
+            - generic [ref=e160]: Powered by
+            - generic [ref=e161]: React + TypeScript + Tailwind CSS
+      - paragraph [ref=e163]: "💡 Tipp: Verwende Alt+1-4 für schnelle Navigation zwischen den Seiten"
+```

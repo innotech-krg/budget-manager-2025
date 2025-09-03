@@ -1,0 +1,120 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e8]:
+        - generic [ref=e10]: €
+        - generic [ref=e11]:
+          - heading "Budget Manager 2025" [level=1] [ref=e12]
+          - paragraph [ref=e13]: Deutsche Geschäfts-Budget-Verwaltung
+      - navigation "Hauptnavigation" [ref=e14]:
+        - button "📊 Dashboard Live" [ref=e15] [cursor=pointer]:
+          - generic [ref=e16] [cursor=pointer]:
+            - generic [ref=e17] [cursor=pointer]: 📊
+            - generic [ref=e18] [cursor=pointer]: Dashboard
+            - generic [ref=e19] [cursor=pointer]: Live
+        - button "💰 Budget-Verwaltung" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21] [cursor=pointer]:
+            - generic [ref=e22] [cursor=pointer]: 💰
+            - generic [ref=e23] [cursor=pointer]: Budget-Verwaltung
+        - button "🎯 3D Budget-Tracking" [ref=e24] [cursor=pointer]:
+          - generic [ref=e25] [cursor=pointer]:
+            - generic [ref=e26] [cursor=pointer]: 🎯
+            - generic [ref=e27] [cursor=pointer]: 3D Budget-Tracking
+        - button "🔄 Budget-Transfers" [ref=e28] [cursor=pointer]:
+          - generic [ref=e29] [cursor=pointer]:
+            - generic [ref=e30] [cursor=pointer]: 🔄
+            - generic [ref=e31] [cursor=pointer]: Budget-Transfers
+  - main [ref=e32]:
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - generic [ref=e37]:
+          - generic [ref=e39]: 💰
+          - generic [ref=e40]:
+            - heading "Budget-Verwaltung" [level=1] [ref=e41]
+            - paragraph [ref=e42]: Jahresbudgets erstellen, verwalten und überwachen
+        - generic [ref=e43]:
+          - generic [ref=e45]:
+            - generic [ref=e47]: 📊
+            - generic [ref=e48]:
+              - paragraph [ref=e49]: Gesamt Budgets
+              - paragraph [ref=e50]: "8"
+          - generic [ref=e52]:
+            - generic [ref=e54]: ✅
+            - generic [ref=e55]:
+              - paragraph [ref=e56]: Aktive Budgets
+              - paragraph [ref=e57]: "0"
+          - generic [ref=e59]:
+            - generic [ref=e61]: ⏳
+            - generic [ref=e62]:
+              - paragraph [ref=e63]: In Planung
+              - paragraph [ref=e64]: "0"
+          - generic [ref=e66]:
+            - generic [ref=e68]: 💶
+            - generic [ref=e69]:
+              - paragraph [ref=e70]: Gesamtvolumen
+              - paragraph [ref=e71]: 7.800.000 €
+      - navigation "Breadcrumb" [ref=e72]:
+        - list [ref=e73]:
+          - listitem [ref=e74]:
+            - button "Budget-Übersicht" [ref=e75] [cursor=pointer]:
+              - img [ref=e76] [cursor=pointer]
+              - text: Budget-Übersicht
+          - listitem [ref=e78]:
+            - generic [ref=e79]:
+              - img [ref=e80]
+              - generic [ref=e82]: Neues Budget erstellen
+      - generic [ref=e84]:
+        - generic [ref=e85]:
+          - heading "💰 Neues Jahresbudget erstellen" [level=2] [ref=e86]
+          - paragraph [ref=e87]: Erstellen Sie ein neues Jahresbudget mit deutschen Geschäftsstandards
+        - generic [ref=e88]:
+          - generic [ref=e89]:
+            - heading "Neues Jahresbudget erstellen" [level=2] [ref=e90]
+            - paragraph [ref=e91]: Erstellen Sie ein neues Jahresbudget mit deutscher Geschäftslogik
+          - generic [ref=e92]:
+            - generic [ref=e93]:
+              - generic [ref=e94]: Geschäftsjahr *
+              - spinbutton "Geschäftsjahr *" [ref=e95]: "2029"
+              - paragraph [ref=e96]: Budgets können nur für das aktuelle Jahr (2025) oder zukünftige Jahre erstellt werden.
+            - generic [ref=e97]:
+              - generic [ref=e98]: Gesamtbudget (€) *
+              - spinbutton "Gesamtbudget (€) *" [ref=e99]: "500000"
+              - paragraph [ref=e100]: "Formatiert: 500.000,00 €"
+            - generic [ref=e101]:
+              - generic [ref=e102]: Reserve-Allokation (%) *
+              - spinbutton "Reserve-Allokation (%) *" [ref=e103]: "10"
+              - paragraph [ref=e104]: "Reservebetrag: 50.000,00 €"
+            - generic [ref=e105]:
+              - generic [ref=e106]: Beschreibung (optional)
+              - textbox "Beschreibung (optional)" [ref=e107]: Erstes Budget 2029
+            - generic [ref=e108]:
+              - heading "Budget-Übersicht" [level=3] [ref=e109]
+              - generic [ref=e110]:
+                - generic [ref=e111]:
+                  - generic [ref=e112]: "Gesamtbudget:"
+                  - paragraph [ref=e113]: 500.000,00 €
+                - generic [ref=e114]:
+                  - generic [ref=e115]: "Reserve (10%):"
+                  - paragraph [ref=e116]: 50.000,00 €
+                - generic [ref=e117]:
+                  - generic [ref=e118]: "Verfügbares Budget:"
+                  - paragraph [ref=e119]: 450.000,00 €
+            - generic [ref=e120]:
+              - button "Abbrechen" [ref=e121] [cursor=pointer]
+              - button "Budget erstellen" [ref=e122] [cursor=pointer]
+  - contentinfo [ref=e123]:
+    - generic [ref=e124]:
+      - generic [ref=e125]:
+        - paragraph [ref=e127]:
+          - generic [ref=e128]: © 2025 Budget Manager
+          - generic [ref=e130]: 🇩🇪 Entwickelt mit deutscher Präzision
+        - generic [ref=e131]:
+          - generic [ref=e134]: System aktiv
+          - generic [ref=e135]:
+            - generic [ref=e136]: Powered by
+            - generic [ref=e137]: React + TypeScript + Tailwind CSS
+      - paragraph [ref=e139]: "💡 Tipp: Verwende Alt+1-4 für schnelle Navigation zwischen den Seiten"
+```

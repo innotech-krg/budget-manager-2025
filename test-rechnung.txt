@@ -1,0 +1,31 @@
+DEFINE® ‐ Design & Marketing GmbH
+Musterstraße 123, 1010 Wien, Österreich
+UID: ATU12345678 | Tel: +43 1 234 5678
+office@define.at | www.define.at
+
+RECHNUNG Nr. 2025-001
+
+Rechnungsdatum: 02.09.2025
+Leistungsdatum: 01.09.2025
+Kunde: InnoTech Solutions GmbH
+Projekt: Website MyInnoSpace Portal
+
+POSITIONEN:
+1. UI/UX Design für Kundenportal
+   40 Stunden à 85,00 € = 3.400,00 €
+
+2. Responsive Frontend Entwicklung  
+   60 Stunden à 95,00 € = 5.700,00 €
+
+3. Backend API Integration
+   25 Stunden à 110,00 € = 2.750,00 €
+
+Nettobetrag: 11.850,00 €
+20% MwSt.: 2.370,00 €
+Gesamtbetrag: 14.220,00 €
+
+Zahlungsbedingungen: 14 Tage netto
+Bankverbindung: IBAN AT12 3456 7890 1234 5678
+
+
+
