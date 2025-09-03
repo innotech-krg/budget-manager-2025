@@ -1,0 +1,139 @@
+version: '3.8'
+
+# =================================
+# DEVELOPMENT ENVIRONMENT
+# Hot-Reload & Development Tools
+# =================================
+
+services:
+  # =================================
+  # FRONTEND DEVELOPMENT
+  # =================================
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      target: development
+    container_name: budget-manager-frontend-dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+      - frontend-cache:/app/.vite
+    environment:
+      - VITE_API_BASE_URL=http://localhost:3001/api
+      - VITE_WS_URL=ws://localhost:3001
+      - VITE_APP_ENVIRONMENT=development
+      - VITE_DEBUG=true
+      - CHOKIDAR_USEPOLLING=true
+    networks:
+      - budget-network
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+
+  # =================================
+  # BACKEND DEVELOPMENT
+  # =================================
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+      target: development
+    container_name: budget-manager-backend-dev
+    ports:
+      - "3001:3001"
+      - "9229:9229"  # Node.js Debug Port
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+      - backend-uploads:/app/uploads
+      - backend-temp:/app/temp
+      - backend-logs:/app/logs
+    environment:
+      - NODE_ENV=development
+      - DEBUG=budget-manager:*
+      - PORT=3001
+      - SUPABASE_URL=${SUPABASE_URL}
+      - SUPABASE_ANON_KEY=${SUPABASE_ANON_KEY}
+      - SUPABASE_SERVICE_ROLE_KEY=${SUPABASE_SERVICE_ROLE_KEY}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - JWT_SECRET=${JWT_SECRET:-dev-secret-key}
+      - CORS_ORIGIN=http://localhost:3000
+    networks:
+      - budget-network
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+    command: ["npm", "run", "dev"]
+
+  # =================================
+  # REDIS DEVELOPMENT
+  # =================================
+  redis:
+    image: redis:7-alpine
+    container_name: budget-manager-redis-dev
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-dev-data:/data
+    networks:
+      - budget-network
+    restart: unless-stopped
+    command: redis-server --appendonly yes
+
+  # =================================
+  # DEVELOPMENT TOOLS
+  # =================================
+  
+  # Redis Commander - Redis GUI
+  redis-commander:
+    image: rediscommander/redis-commander:latest
+    container_name: budget-manager-redis-gui
+    ports:
+      - "8081:8081"
+    environment:
+      - REDIS_HOSTS=local:redis:6379
+    depends_on:
+      - redis
+    networks:
+      - budget-network
+    restart: unless-stopped
+
+  # Mailhog - Email Testing
+  mailhog:
+    image: mailhog/mailhog:latest
+    container_name: budget-manager-mailhog
+    ports:
+      - "1025:1025"  # SMTP
+      - "8025:8025"  # Web UI
+    networks:
+      - budget-network
+    restart: unless-stopped
+
+# =================================
+# NETWORKS
+# =================================
+networks:
+  budget-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+
+# =================================
+# VOLUMES
+# =================================
+volumes:
+  backend-uploads:
+    driver: local
+  backend-temp:
+    driver: local
+  backend-logs:
+    driver: local
+  redis-dev-data:
+    driver: local
+  frontend-cache:
+    driver: local
