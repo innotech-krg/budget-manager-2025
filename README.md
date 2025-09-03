@@ -2,11 +2,13 @@
 
 **Professionelle deutsche Geschäfts-Budget-Verwaltung mit KI-basierter OCR-Rechnungsverarbeitung**
 
-[![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen)](https://github.com/innotech/budget-manager-2025)
+[![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen)](https://github.com/innotech-krg/budget-manager-2025)
 [![Node.js](https://img.shields.io/badge/Node.js-18%2B-green)](https://nodejs.org/)
 [![React](https://img.shields.io/badge/React-18-blue)](https://reactjs.org/)
 [![Supabase](https://img.shields.io/badge/Database-Supabase-green)](https://supabase.com/)
 [![Docker](https://img.shields.io/badge/Docker-Ready-blue)](https://docker.com/)
+[![Auth](https://img.shields.io/badge/Auth-JWT%20%2B%20Supabase-orange)](https://supabase.com/auth)
+[![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-yellow)](https://github.com/features/actions)
 
 ## 🚀 Features
 
@@ -16,6 +18,8 @@
 - **🤖 KI-basierte OCR-Rechnungsverarbeitung** - OpenAI GPT-4 Vision + Anthropic Claude
 - **📋 Projekt-Management** - Teams, Lieferanten, Budget-Tracking
 - **🔐 Admin-System** - Benutzerrollen, API-Key-Management, System-Monitoring
+- **🔑 Produktive Authentifizierung** - JWT-Token-basiert mit Supabase Auth-Integration
+- **🐳 Docker-Deployment** - Multi-Container Setup mit CI/CD Pipeline
 - **💰 3D-Budget-Tracking** - Verplant/Zugewiesen/Verbraucht mit deutschem Ampel-System
 - **🔄 Budget-Transfer-System** - Genehmigungs-Workflow mit E-Mail-Benachrichtigungen
 - **📈 Real-time Monitoring** - Performance-Metriken und System-Status
@@ -48,6 +52,7 @@
 
 ### **Voraussetzungen**
 - Node.js 18+
+- Docker & Docker Compose (für Container-Setup)
 - npm oder yarn
 - Supabase Account
 - OpenAI API Key
@@ -55,7 +60,7 @@
 
 ### **1. Repository klonen**
 ```bash
-git clone https://github.com/innotech/budget-manager-2025.git
+git clone https://github.com/innotech-krg/budget-manager-2025.git
 cd budget-manager-2025
 ```
 
@@ -103,7 +108,7 @@ JWT_SECRET=your-jwt-secret
 # Tabellen und Policies werden automatisch erstellt
 ```
 
-### **5. Entwicklung starten**
+### **5a. Native Entwicklung starten**
 ```bash
 # Backend starten (Terminal 1)
 cd backend && npm start
@@ -112,10 +117,24 @@ cd backend && npm start
 cd frontend && npm run dev
 ```
 
+### **5b. Docker Entwicklung starten (Empfohlen)**
+```bash
+# Development Environment mit Docker
+docker-compose -f docker-compose.dev.yml up --build
+
+# Oder mit Helper-Script
+./docker/scripts/start-dev.sh
+```
+
 **🎉 Anwendung läuft auf:**
 - Frontend: http://localhost:3000
 - Backend API: http://localhost:3001
 - Dashboard: http://localhost:3000/dashboard
+
+### **🔑 Standard-Anmeldedaten**
+- **E-Mail:** `admin@budgetmanager.com`
+- **Passwort:** `BudgetManager2025!`
+- **Rolle:** SuperAdmin
 
 ## 🐳 Docker Deployment
 

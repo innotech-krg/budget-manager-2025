@@ -61,6 +61,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [isInitialized, setIsInitialized] = useState(false); // 🔧 NEW: Auth check completed
   const [showLoginOverlay, setShowLoginOverlay] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const isAuthenticated = !!user;
 
@@ -111,7 +112,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
       const controller = new AbortController();
       const timeoutId = setTimeout(() => controller.abort(), 5000); // 5s timeout
       
-      const response = await fetch('http://localhost:3001/api/auth/user', {
+      const response = await fetch('/api/auth/user', {
         headers: {
           'Authorization': `Bearer ${token}`
         },
@@ -158,10 +159,15 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
 
   const login = async (email: string, password: string) => {
     try {
+      setIsLoading(true);
+      setError(null);
+
+      console.log('🔐 AuthProvider: Starting login...', { email });
+
       const controller = new AbortController();
       const timeoutId = setTimeout(() => controller.abort(), 10000); // 10s timeout for login
       
-      const response = await fetch('http://localhost:3001/api/auth/login', {
+      const response = await fetch('/api/auth/login', {
         signal: controller.signal,
         method: 'POST',
         headers: {
@@ -171,31 +177,36 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
       });
       
       clearTimeout(timeoutId);
-      const data = await response.json();
 
-      if (!response.ok || !data.success) {
-        throw new Error(data.error || 'Anmeldefehler');
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => ({ message: 'Login failed' }));
+        throw new Error(errorData.message || 'Login failed');
       }
 
-      // Store token and set in apiService
-      if (data.token) {
+      const data = await response.json();
+      console.log('✅ AuthProvider: Login successful', { userId: data.user?.id });
+
+      if (data.token && data.user) {
         localStorage.setItem('auth_token', data.token);
         apiService.setAuthToken(data.token);
+        setUser(data.user);
+        setShowLoginOverlay(false);
+      } else {
+        throw new Error('Invalid response format');
       }
-
-      // Set user
-      setUser(data.user);
-      setShowLoginOverlay(false);
 
       console.log('✅ Login successful');
     } catch (error: any) {
       if (error.name === 'AbortError') {
         console.error('❌ Login timed out - backend not available');
-        throw new Error('Login-Timeout: Backend nicht erreichbar');
+        setError('Login-Timeout: Backend nicht erreichbar');
       } else {
         console.error('❌ Login failed:', error);
-        throw error;
+        setError(error instanceof Error ? error.message : 'Login failed');
       }
+      throw error;
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -203,7 +214,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     try {
       const token = localStorage.getItem('auth_token');
       if (token) {
-        await fetch('http://localhost:3001/api/auth/logout', {
+        await fetch('/api/auth/logout', {
           method: 'POST',
           headers: {
             'Authorization': `Bearer ${token}`
