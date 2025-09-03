@@ -28,7 +28,7 @@ COPY package*.json ./
 FROM base AS development
 
 # Development-Dependencies installieren
-RUN npm ci --include=dev
+RUN npm install
 
 # Source-Code kopieren
 COPY . .
@@ -46,7 +46,7 @@ CMD ["npm", "run", "dev"]
 FROM base AS build
 
 # Nur Production-Dependencies installieren
-RUN npm ci --only=production && npm cache clean --force
+RUN npm install --only=production && npm cache clean --force
 
 # Source-Code kopieren
 COPY . .

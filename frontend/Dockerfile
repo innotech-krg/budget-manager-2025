@@ -23,7 +23,7 @@ COPY package*.json ./
 FROM base AS development
 
 # Development-Dependencies installieren
-RUN npm ci
+RUN npm install
 
 # Source-Code kopieren
 COPY . .
@@ -38,7 +38,7 @@ CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0"]
 FROM base AS build
 
 # Dependencies installieren
-RUN npm ci
+RUN npm install
 
 # Source-Code kopieren
 COPY . .

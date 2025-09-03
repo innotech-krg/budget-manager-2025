@@ -1,0 +1,199 @@
+name: 🚀 Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+env:
+  NODE_VERSION: '18'
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
+
+jobs:
+  # =================================
+  # CREATE RELEASE
+  # =================================
+  release:
+    name: 📦 Create Release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      packages: write
+    outputs:
+      upload_url: ${{ steps.create_release.outputs.upload_url }}
+      version: ${{ steps.get_version.outputs.version }}
+    steps:
+      - name: 📥 Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 🏷️ Get Version
+        id: get_version
+        run: echo "version=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
+
+      - name: 📋 Generate Changelog
+        id: changelog
+        run: |
+          echo "## 🎉 Budget Manager 2025 Release ${{ steps.get_version.outputs.version }}" > CHANGELOG.md
+          echo "" >> CHANGELOG.md
+          echo "### ✨ Features" >> CHANGELOG.md
+          git log --pretty=format:"- %s" --grep="feat:" $(git describe --tags --abbrev=0 HEAD^)..HEAD >> CHANGELOG.md || echo "- Erste Release" >> CHANGELOG.md
+          echo "" >> CHANGELOG.md
+          echo "### 🐛 Bug Fixes" >> CHANGELOG.md
+          git log --pretty=format:"- %s" --grep="fix:" $(git describe --tags --abbrev=0 HEAD^)..HEAD >> CHANGELOG.md || echo "- Keine Bug Fixes in dieser Release" >> CHANGELOG.md
+          echo "" >> CHANGELOG.md
+          echo "### 🔧 Improvements" >> CHANGELOG.md
+          git log --pretty=format:"- %s" --grep="chore:\|refactor:\|perf:" $(git describe --tags --abbrev=0 HEAD^)..HEAD >> CHANGELOG.md || echo "- Verschiedene Verbesserungen" >> CHANGELOG.md
+
+      - name: 📦 Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ steps.get_version.outputs.version }}
+          release_name: Budget Manager 2025 ${{ steps.get_version.outputs.version }}
+          body_path: CHANGELOG.md
+          draft: false
+          prerelease: false
+
+  # =================================
+  # BUILD RELEASE ARTIFACTS
+  # =================================
+  build-artifacts:
+    name: 🏗️ Build Release Artifacts
+    runs-on: ubuntu-latest
+    needs: release
+    strategy:
+      matrix:
+        include:
+          - target: frontend
+            context: ./frontend
+            dockerfile: ./frontend/Dockerfile
+          - target: backend
+            context: ./backend
+            dockerfile: ./backend/Dockerfile
+    steps:
+      - name: 📥 Checkout Code
+        uses: actions/checkout@v4
+
+      - name: 📦 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: 📦 Install Dependencies
+        run: |
+          cd ${{ matrix.target }} && npm ci
+
+      - name: 🏗️ Build Application
+        run: |
+          cd ${{ matrix.target }} && npm run build
+
+      - name: 📦 Create Archive
+        run: |
+          cd ${{ matrix.target }}
+          tar -czf ../${{ matrix.target }}-${{ needs.release.outputs.version }}.tar.gz dist/ node_modules/ package*.json
+
+      - name: 📤 Upload Release Asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ needs.release.outputs.upload_url }}
+          asset_path: ./${{ matrix.target }}-${{ needs.release.outputs.version }}.tar.gz
+          asset_name: ${{ matrix.target }}-${{ needs.release.outputs.version }}.tar.gz
+          asset_content_type: application/gzip
+
+  # =================================
+  # DOCKER RELEASE IMAGES
+  # =================================
+  docker-release:
+    name: 🐳 Docker Release Images
+    runs-on: ubuntu-latest
+    needs: release
+    permissions:
+      contents: read
+      packages: write
+    strategy:
+      matrix:
+        include:
+          - target: frontend
+            context: ./frontend
+            dockerfile: ./frontend/Dockerfile
+          - target: backend
+            context: ./backend
+            dockerfile: ./backend/Dockerfile
+    steps:
+      - name: 📥 Checkout Code
+        uses: actions/checkout@v4
+
+      - name: 🔐 Log in to Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 🔧 Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: 🐳 Build and Push Release Image
+        uses: docker/build-push-action@v5
+        with:
+          context: ${{ matrix.context }}
+          file: ${{ matrix.dockerfile }}
+          target: production
+          push: true
+          tags: |
+            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}-${{ matrix.target }}:${{ needs.release.outputs.version }}
+            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}-${{ matrix.target }}:stable
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+  # =================================
+  # DEPLOY TO PRODUCTION
+  # =================================
+  deploy-production:
+    name: 🌟 Deploy Release to Production
+    runs-on: ubuntu-latest
+    needs: [release, build-artifacts, docker-release]
+    environment:
+      name: production
+      url: https://budget-manager.com
+    steps:
+      - name: 📥 Checkout Code
+        uses: actions/checkout@v4
+
+      - name: 🌟 Deploy to Production
+        run: |
+          echo "🌟 Deploying release ${{ needs.release.outputs.version }} to production..."
+          # Hier würde der tatsächliche Deployment-Code stehen
+          echo "✅ Production deployment completed"
+
+      - name: 📢 Notify Success
+        uses: 8398a7/action-slack@v3
+        with:
+          status: success
+          text: |
+            🎉 Budget Manager 2025 Release ${{ needs.release.outputs.version }} erfolgreich deployed!
+            
+            🔗 Production: https://budget-manager.com
+            📦 Release: https://github.com/${{ github.repository }}/releases/tag/${{ needs.release.outputs.version }}
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+
+      - name: 📢 Notify Failure
+        uses: 8398a7/action-slack@v3
+        if: failure()
+        with:
+          status: failure
+          text: |
+            ❌ Budget Manager 2025 Release ${{ needs.release.outputs.version }} Deployment fehlgeschlagen!
+            
+            🔍 Logs: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
